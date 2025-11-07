@@ -32,5 +32,5 @@ This dataset reports 2021 emissions estimates (in kilotonnes) by sector and subs
 
 ## Questions
 1. Which package is best for rendering a map of Lahore?
-2. Should I obtain shapefiles/GeoJSON so I can layer the air-quality monitor coordinates over administrative boundaries?
-3. Will MapLibre GL JS let me add and style point layers (monitors) and polygon layers (e.g., sectors) with the interactivity I need?
+2. Should I obtain shapefiles/GeoJSON so I can layer the air-quality monitor coordinates over the map?
+3. Will MapLibre GL JS let me add and style point layers (monitors)?
