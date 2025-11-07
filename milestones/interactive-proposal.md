@@ -11,7 +11,7 @@ While Altair can be used for the bar graphs for the sectoral emissions, I am ope
 
 ## Mockup
 For the map, I plan to replicate this pattern: each circle is an air-quality monitor, with its color showing how healthy or unhealthy the AQI was at that moment.
-![](milestones/iqair_example.png)
+![](iqair_example.png)
 
 ## Data Sources
 
