@@ -1,5 +1,6 @@
-# Sarah Hussain
+# Sarah Hussain 
 
+# testing
 ## Description
 According to the 6th Annual World Air Quality Report, Pakistan was ranked as the second most polluted country in the world, with PM2.5 concentrations approximately 14 times higher than the World Health Organization (WHO) guideline levels (IQAir, 2024). More specifically, Lahore is the second most polluted city in the world (IQAir). Through this project I want to explore how the air quality index (AQI) has changed over time in Lahore and how it changes across different seasons (months). I will also explore the breakdown of emissions by pollutants by each sector (power, domestic, transport etc) which can inform policymakers on how costs of pollution can be distributed across the economy. 
 
