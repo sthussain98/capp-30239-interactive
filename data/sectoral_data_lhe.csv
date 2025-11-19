@@ -1,0 +1,244 @@
+sector,sub_sector,source,pollutant,emissions,unit
+Power Generation,Kohinoor Energy Limited,Fossil Fuel,OC,0.0004,kt
+Power Generation,Kohinoor Energy Limited,Fossil Fuel,SOx,2.5033,kt
+Power Generation,Kohinoor Energy Limited,Fossil Fuel,NOx,0.276,kt
+Power Generation,Kohinoor Energy Limited,Fossil Fuel,PM2.5,0.0128,kt
+Power Generation,Kohinoor Energy Limited,Fossil Fuel,NMVOC,0.0069,kt
+Power Generation,Kohinoor Energy Limited,Fossil Fuel,CO,0.0207,kt
+Power Generation,Kohinoor Energy Limited,Fossil Fuel,BC,0.0009,kt
+Power Generation,Kohinoor Energy Limited,Fossil Fuel,CO2,105.8534,kt
+Power Generation,Nishat Power Ltd,Fossil Fuel,OC,0.0007,kt
+Power Generation,Nishat Power Ltd,Fossil Fuel,SOx,4.3615,kt
+Power Generation,Nishat Power Ltd,Fossil Fuel,NOx,0.4809,kt
+Power Generation,Nishat Power Ltd,Fossil Fuel,PM2.5,0.0224,kt
+Power Generation,Nishat Power Ltd,Fossil Fuel,NMVOC,0.012,kt
+Power Generation,Nishat Power Ltd,Fossil Fuel,CO,0.0361,kt
+Power Generation,Nishat Power Ltd,Fossil Fuel,BC,0.0016,kt
+Power Generation,Nishat Power Ltd,Fossil Fuel,CO2,184.4288,kt
+Power Generation,Nishat Chunian Power Ltd,Fossil Fuel,OC,0.0007,kt
+Power Generation,Nishat Chunian Power Ltd,Fossil Fuel,SOx,4.3766,kt
+Power Generation,Nishat Chunian Power Ltd,Fossil Fuel,NOx,0.4826,kt
+Power Generation,Nishat Chunian Power Ltd,Fossil Fuel,PM2.5,0.0224,kt
+Power Generation,Nishat Chunian Power Ltd,Fossil Fuel,NMVOC,0.0121,kt
+Power Generation,Nishat Chunian Power Ltd,Fossil Fuel,CO,0.0362,kt
+Power Generation,Nishat Chunian Power Ltd,Fossil Fuel,BC,0.0016,kt
+Power Generation,Nishat Chunian Power Ltd,Fossil Fuel,CO2,185.0694,kt
+Power Generation,Orient Power Company,Fossil Fuel,OC,0.0002,kt
+Power Generation,Orient Power Company,Fossil Fuel,SOx,0.0036,kt
+Power Generation,Orient Power Company,Fossil Fuel,NOx,0.4485,kt
+Power Generation,Orient Power Company,Fossil Fuel,PM2.5,0.0003,kt
+Power Generation,Orient Power Company,Fossil Fuel,NMVOC,0.006,kt
+Power Generation,Orient Power Company,Fossil Fuel,CO,0.0568,kt
+Power Generation,Orient Power Company,Fossil Fuel,BC,0.00003,kt
+Power Generation,Atlas Power Ltd,Fossil Fuel,OC,0.0007,kt
+Power Generation,Atlas Power Ltd,Fossil Fuel,SOx,4.6282,kt
+Power Generation,Atlas Power Ltd,Fossil Fuel,NOx,0.5103,kt
+Power Generation,Atlas Power Ltd,Fossil Fuel,PM2.5,0.0237,kt
+Power Generation,Atlas Power Ltd,Fossil Fuel,NMVOC,0.0128,kt
+Power Generation,Atlas Power Ltd,Fossil Fuel,CO,0.0383,kt
+Power Generation,Atlas Power Ltd,Fossil Fuel,BC,0.0017,kt
+Power Generation,Atlas Power Ltd,Fossil Fuel,CO2,195.7083,kt
+Power Generation,Sapphire Electric Company,Fossil Fuel,OC,0.0002,kt
+Power Generation,Sapphire Electric Company,Fossil Fuel,SOx,0.0033,kt
+Power Generation,Sapphire Electric Company,Fossil Fuel,NOx,0.4154,kt
+Power Generation,Sapphire Electric Company,Fossil Fuel,PM2.5,0.0003,kt
+Power Generation,Sapphire Electric Company,Fossil Fuel,NMVOC,0.0055,kt
+Power Generation,Sapphire Electric Company,Fossil Fuel,CO,0.0526,kt
+Power Generation,Sapphire Electric Company,Fossil Fuel,BC,0.000028,kt
+Industries,Commercial,NG,PM2.5,0.0002,kt
+Industries,Commercial,NG,BC,0.0003,kt
+Industries,Commercial,NG,NOx,0.0734,kt
+Industries,Commercial,NG,CO,0.065,kt
+Industries,Commercial,NG,SO2,0.0025,kt
+Industries,Commercial,LPG,PM2.5,0.0042,kt
+Industries,Commercial,LPG,BC,0.00002,kt
+Industries,Commercial,LPG,NOx,0.0738,kt
+Industries,Commercial,LPG,CO,0.0844,kt
+Industries,Commercial,LPG,SO2,0.0025,kt
+Industries,Commercial,Coal,PM2.5,0.3887,kt
+Industries,Commercial,Coal,BC,0.0029,kt
+Industries,Commercial,Coal,OC,0.0583,kt
+Industries,Commercial,Coal,NOx,0.081,kt
+Industries,Commercial,Coal,CO,0.2024,kt
+Industries,Commercial,Coal,SO2,1.1224,kt
+Industries,Commercial,HSD,PM2.5,0.0611,kt
+Industries,Commercial,HSD,BC,0.0251,kt
+Industries,Commercial,HSD,NOx,0.8831,kt
+Industries,Commercial,HSD,CO,0.2665,kt
+Industries,Commercial,HSD,SO2,0.2951,kt
+Industries,General,NG,PM2.5,0.0027,kt
+Industries,General,NG,BC,0.0003,kt
+Industries,General,NG,NOx,0.9289,kt
+Industries,General,NG,CO,0.8228,kt
+Industries,General,NG,SO2,0.0316,kt
+Industries,General,LPG,PM2.5,0.0051,kt
+Industries,General,LPG,BC,0.00003,kt
+Industries,General,LPG,NOx,0.0887,kt
+Industries,General,LPG,CO,0.038,kt
+Industries,General,LPG,SO2,0.003,kt
+Industries,General,Coal,PM2.5,6.6516,kt
+Industries,General,Coal,BC,0.0178,kt
+Industries,General,Coal,OC,0.3583,kt
+Industries,General,Coal,NOx,0.4976,kt
+Industries,General,Coal,CO,0.6967,kt
+Industries,General,Coal,SO2,3.7545,kt
+Industries,General,HSD,PM2.5,0.0611,kt
+Industries,General,HSD,BC,0.0251,kt
+Industries,General,HSD,NOx,0.8831,kt
+Industries,General,HSD,CO,0.2665,kt
+Industries,General,HSD,SO2,0.2951,kt
+Industries,General,RFO,PM2.5,0.0407,kt
+Industries,General,RFO,BC,0.0043,kt
+Industries,General,RFO,NOx,0.2966,kt
+Industries,General,RFO,CO,0.2326,kt
+Industries,General,RFO,SO2,1.5822,kt
+Industries,General,Biomass,PM2.5,0.0318,kt
+Industries,General,Biomass,BC,0.0045,kt
+Industries,General,Biomass,NOx,0.2588,kt
+Industries,General,Biomass,CO,0.2389,kt
+Industries,General,Biomass,SO2,0.2846,kt
+Brick Kilns,Brick Kilns,Coal,PM2.5,4.2573,kt
+Brick Kilns,Brick Kilns,Coal,BC,0.0128,kt
+Brick Kilns,Brick Kilns,Coal,OC,0.2293,kt
+Brick Kilns,Brick Kilns,Coal,NOx,0.3185,kt
+Brick Kilns,Brick Kilns,Coal,CO,12.7405,kt
+Brick Kilns,Brick Kilns,Coal,SO2,4.415,kt
+Domestic,Greater Lahore Area,Charcoal,PM2.5,0.0007,kt
+Domestic,Greater Lahore Area,Charcoal,NOx,0.0004,kt
+Domestic,Greater Lahore Area,Charcoal,SO2,0.002,kt
+Domestic,Greater Lahore Area,Charcoal,OC,0.0002,kt
+Domestic,Greater Lahore Area,Charcoal,BC,0.0002,kt
+Domestic,Greater Lahore Area,Charcoal,CO,0.008,kt
+Domestic,Greater Lahore Area,Charcoal,VOC,0.0032,kt
+Domestic,Greater Lahore Area,Fuelwood & other,PM2.5,1.1926,kt
+Domestic,Greater Lahore Area,Fuelwood & other,SO2,0,kt
+Domestic,Greater Lahore Area,Fuelwood & other,OC,0.5797,kt
+Domestic,Greater Lahore Area,Fuelwood & other,BC,0.1449,kt
+Domestic,Greater Lahore Area,Fuelwood & other,CO,11.5929,kt
+Domestic,Greater Lahore Area,Fuelwood & other,VOC,1.1593,kt
+Domestic,Greater Lahore Area,Kerosene,PM2.5,0.012,kt
+Domestic,Greater Lahore Area,Kerosene,NOx,0.00001,kt
+Domestic,Greater Lahore Area,Kerosene,SO2,0.0012,kt
+Domestic,Greater Lahore Area,Kerosene,BC,0.0116,kt
+Domestic,Greater Lahore Area,Kerosene,CO,0.0016,kt
+Domestic,Greater Lahore Area,Kerosene,VOC,0.0001,kt
+Domestic,Greater Lahore Area,Gas,PM2.5,0.0558,kt
+Domestic,Greater Lahore Area,Gas,NOx,1.3957,kt
+Domestic,Greater Lahore Area,Gas,SO2,0.0332,kt
+Domestic,Greater Lahore Area,Gas,OC,0.0419,kt
+Domestic,Greater Lahore Area,Gas,BC,0.0036,kt
+Domestic,Greater Lahore Area,Gas,CO,0.8653,kt
+Domestic,Greater Lahore Area,Gas,VOC,0.0558,kt
+Domestic,Greater Lahore Area,LPG,PM2.5,0.0106,kt
+Domestic,Greater Lahore Area,LPG,NOx,0.0907,kt
+Domestic,Greater Lahore Area,LPG,OC,0,kt
+Domestic,Greater Lahore Area,LPG,BC,0.0007,kt
+Domestic,Greater Lahore Area,LPG,CO,0.0605,kt
+Domestic,Greater Lahore Area,LPG,VOC,0.0045,kt
+Domestic,Greater Lahore Area,Waste,PM2.5,1.5632,kt
+Domestic,Greater Lahore Area,Waste,NOx,0.0375,kt
+Domestic,Greater Lahore Area,Waste,SO2,0.0402,kt
+Domestic,Greater Lahore Area,Waste,OC,0.9422,kt
+Domestic,Greater Lahore Area,Waste,BC,0.1162,kt
+Domestic,Greater Lahore Area,Waste,CO,7.5086,kt
+Domestic,Greater Lahore Area,Waste,VOC,1.5125,kt
+Transport,Fuel Emissions,Small cars,PM2.5,0.1714,kt
+Transport,Fuel Emissions,Small cars,NOx,0.9971,kt
+Transport,Fuel Emissions,Small cars,SO2,0.004,kt
+Transport,Fuel Emissions,Small cars,OC,0.0844,kt
+Transport,Fuel Emissions,Small cars,BC,0.0474,kt
+Transport,Fuel Emissions,Small cars,CO,7.1357,kt
+Transport,Fuel Emissions,Small cars,VOC,0.7842,kt
+Transport,Fuel Emissions,Large Cars,PM2.5,0.3148,kt
+Transport,Fuel Emissions,Large Cars,NOx,2.1657,kt
+Transport,Fuel Emissions,Large Cars,SO2,0.5638,kt
+Transport,Fuel Emissions,Large Cars,OC,0.2255,kt
+Transport,Fuel Emissions,Large Cars,BC,0.2355,kt
+Transport,Fuel Emissions,Large Cars,CO,11.1308,kt
+Transport,Fuel Emissions,Large Cars,VOC,1.0613,kt
+Transport,Fuel Emissions,SUVs/Jeeps,PM2.5,0.6041,kt
+Transport,Fuel Emissions,SUVs/Jeeps,NOx,5.7061,kt
+Transport,Fuel Emissions,SUVs/Jeeps,SO2,3.3471,kt
+Transport,Fuel Emissions,SUVs/Jeeps,OC,0.5964,kt
+Transport,Fuel Emissions,SUVs/Jeeps,BC,0.9878,kt
+Transport,Fuel Emissions,SUVs/Jeeps,CO,2.7951,kt
+Transport,Fuel Emissions,SUVs/Jeeps,VOC,0.5611,kt
+Transport,Fuel Emissions,Bikes,PM2.5,0.1724,kt
+Transport,Fuel Emissions,Bikes,NOx,2.2751,kt
+Transport,Fuel Emissions,Bikes,SO2,0.0106,kt
+Transport,Fuel Emissions,Bikes,OC,0.0046,kt
+Transport,Fuel Emissions,Bikes,BC,0.0023,kt
+Transport,Fuel Emissions,Bikes,CO,91.9247,kt
+Transport,Fuel Emissions,Bikes,VOC,16.0868,kt
+Transport,Fuel Emissions,Rickshaws,PM2.5,0.0668,kt
+Transport,Fuel Emissions,Rickshaws,NOx,1.3141,kt
+Transport,Fuel Emissions,Rickshaws,SO2,0.004,kt
+Transport,Fuel Emissions,Rickshaws,OC,0.0019,kt
+Transport,Fuel Emissions,Rickshaws,BC,0.0012,kt
+Transport,Fuel Emissions,Rickshaws,CO,35.7167,kt
+Transport,Fuel Emissions,Rickshaws,VOC,7.3229,kt
+Transport,Fuel Emissions,Wagons,PM2.5,0.4839,kt
+Transport,Fuel Emissions,Wagons,NOx,2.1678,kt
+Transport,Fuel Emissions,Wagons,SO2,1.1168,kt
+Transport,Fuel Emissions,Wagons,OC,0.2222,kt
+Transport,Fuel Emissions,Wagons,BC,0.3424,kt
+Transport,Fuel Emissions,Wagons,CO,2.9138,kt
+Transport,Fuel Emissions,Wagons,VOC,0.4255,kt
+Transport,Fuel Emissions,Buses,PM2.5,0.4235,kt
+Transport,Fuel Emissions,Buses,NOx,12.4709,kt
+Transport,Fuel Emissions,Buses,SO2,2.2309,kt
+Transport,Fuel Emissions,Buses,OC,0.0965,kt
+Transport,Fuel Emissions,Buses,BC,0.2908,kt
+Transport,Fuel Emissions,Buses,CO,7.2523,kt
+Transport,Fuel Emissions,Buses,VOC,0.5871,kt
+Transport,Fuel Emissions,Tractors,PM2.5,0.0288,kt
+Transport,Fuel Emissions,Tractors,NOx,0.277,kt
+Transport,Fuel Emissions,Tractors,SO2,0.1673,kt
+Transport,Fuel Emissions,Tractors,OC,0.0291,kt
+Transport,Fuel Emissions,Tractors,BC,0.049,kt
+Transport,Fuel Emissions,Tractors,CO,0.0803,kt
+Transport,Fuel Emissions,Tractors,VOC,0.0246,kt
+Transport,Fuel Emissions,Small trucks/Pickups,PM2.5,0.4839,kt
+Transport,Fuel Emissions,Small trucks/Pickups,NOx,2.1678,kt
+Transport,Fuel Emissions,Small trucks/Pickups,SO2,1.1168,kt
+Transport,Fuel Emissions,Small trucks/Pickups,OC,0.2222,kt
+Transport,Fuel Emissions,Small trucks/Pickups,BC,0.3424,kt
+Transport,Fuel Emissions,Small trucks/Pickups,CO,2.9138,kt
+Transport,Fuel Emissions,Small trucks/Pickups,VOC,0.4255,kt
+Transport,Fuel Emissions,Large trucks,PM2.5,0.4976,kt
+Transport,Fuel Emissions,Large trucks,NOx,13.1879,kt
+Transport,Fuel Emissions,Large trucks,SO2,2.6214,kt
+Transport,Fuel Emissions,Large trucks,OC,0.1134,kt
+Transport,Fuel Emissions,Large trucks,BC,0.3416,kt
+Transport,Fuel Emissions,Large trucks,CO,8.5214,kt
+Transport,Fuel Emissions,Large trucks,VOC,0.6898,kt
+Transport,Road Dust Emissions,Small cars,PM2.5,0.0936,kt
+Transport,Road Dust Emissions,Small cars,OC,0.0495,kt
+Transport,Road Dust Emissions,Small cars,BC,0.0149,kt
+Transport,Road Dust Emissions,Large Cars,PM2.5,0.0558,kt
+Transport,Road Dust Emissions,Large Cars,OC,0.0266,kt
+Transport,Road Dust Emissions,Large Cars,BC,0.008,kt
+Transport,Road Dust Emissions,SUVs/Jeeps,PM2.5,0.0828,kt
+Transport,Road Dust Emissions,SUVs/Jeeps,OC,0.0294,kt
+Transport,Road Dust Emissions,SUVs/Jeeps,BC,0.0098,kt
+Transport,Road Dust Emissions,Bikes,PM2.5,0.1614,kt
+Transport,Road Dust Emissions,Bikes,OC,0.1138,kt
+Transport,Road Dust Emissions,Bikes,BC,0.0356,kt
+Transport,Road Dust Emissions,Rickshaws,PM2.5,0.0251,kt
+Transport,Road Dust Emissions,Rickshaws,OC,0.018,kt
+Transport,Road Dust Emissions,Rickshaws,BC,0.006,kt
+Transport,Road Dust Emissions,Wagons,PM2.5,0.0109,kt
+Transport,Road Dust Emissions,Wagons,OC,0.0058,kt
+Transport,Road Dust Emissions,Wagons,BC,0.0018,kt
+Transport,Road Dust Emissions,Buses,PM2.5,0.0203,kt
+Transport,Road Dust Emissions,Buses,OC,0.0117,kt
+Transport,Road Dust Emissions,Buses,BC,0.0036,kt
+Transport,Road Dust Emissions,Tractors,PM2.5,0.0104,kt
+Transport,Road Dust Emissions,Tractors,OC,0.0062,kt
+Transport,Road Dust Emissions,Tractors,BC,0.0019,kt
+Transport,Road Dust Emissions,Small trucks/Pickups,PM2.5,0.0212,kt
+Transport,Road Dust Emissions,Small trucks/Pickups,OC,0.0127,kt
+Transport,Road Dust Emissions,Small trucks/Pickups,BC,0.0038,kt
+Transport,Road Dust Emissions,Large trucks,PM2.5,0.0283,kt
+Transport,Road Dust Emissions,Large trucks,OC,0.0163,kt
+Transport,Road Dust Emissions,Large trucks,BC,0.005,kt

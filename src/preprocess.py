@@ -3,11 +3,11 @@ import geojson
 
 # Clean the AQI data
 # read the data
-aqi_data = pl.read_csv("../data/AQI_data.csv")
+
 
 # # filter to only lahore
 
-aqi_data_lhe = aqi_data.filter(pl.col('city') == 'Lahore')
+
 
 month_map = {
     '01':'January', 
@@ -24,8 +24,10 @@ month_map = {
     '12': 'December'
 }
 
-
-aqi_data_lhe_clean = aqi_data_lhe.with_columns(pl.col('timestamp')
+def clean_aqi():
+    aqi_data = pl.read_csv("../data/AQI_data.csv")
+    aqi_data_lhe = aqi_data.filter(pl.col('city') == 'Lahore')
+    aqi_data_lhe_clean = aqi_data_lhe.with_columns(pl.col('timestamp')
                                          .str.split('-')
                                          .alias('date_split')).with_columns(
                                              pl.col("date_split").list.get(0).alias('year'), 
@@ -34,10 +36,9 @@ aqi_data_lhe_clean = aqi_data_lhe.with_columns(pl.col('timestamp')
                                                         .replace(month_map)
                                                         .alias("full_month_name")
                                          ).drop('date_split').filter(pl.col("us_aqi").is_not_null())
-
-
-
-aqi_mon_avg = aqi_data_lhe_clean.group_by(['station_name', 
+    
+    # generate monthly averages of AQI readings for a monitor
+    aqi_mon_avg = aqi_data_lhe_clean.group_by(['station_name', 
                                            'latitude', 
                                            'longitude', 
                                            'year', 
@@ -45,13 +46,31 @@ aqi_mon_avg = aqi_data_lhe_clean.group_by(['station_name',
                                            ]).agg(
                                                pl.col('us_aqi').mean().alias('avg_aqi')
                                            ).sort('avg_aqi', descending = True)
-print(aqi_mon_avg.head(10))
+    
+    aqi_mon_avg_cat = aqi_mon_avg.with_columns(
+        pl.when(pl.col('avg_aqi') <= 50).then(pl.lit('Good'))
+        .when((pl.col('avg_aqi') > 50) & (pl.col('avg_aqi') <= 100)).then(pl.lit('Moderate'))
+        .when((pl.col('avg_aqi') > 100) & (pl.col('avg_aqi') <= 150)).then(pl.lit('Unhealthy for Sensitive Groups'))
+        .when((pl.col('avg_aqi') > 150) & (pl.col('avg_aqi') <= 200)).then(pl.lit('Unhealthy'))
+        .when((pl.col('avg_aqi') > 200) & (pl.col('avg_aqi') <= 300)).then(pl.lit('Very Unhealthy'))
+        .when(pl.col('avg_aqi') > 300).then(pl.lit('Hazardous'))
+        .otherwise(pl.lit('NA'))
+        .alias('aqi_cat'))
+    
+    return aqi_mon_avg_cat
 
-# convert data to a geojson
-features = []
 
-for row in aqi_mon_avg.iter_rows(named = True):
-    feature = {
+# generate a test geojson for 1 year
+
+# test_df = clean_aqi()
+# print(test_df.tail(10))
+
+#print(aqi_mon_avg.head(10))
+
+def gen_geojson(df):
+    features = []
+    for row in df.iter_rows(named = True):
+        feature = {
         "type": "Feature",
         "geometry": {
             "type": "Point",
@@ -61,42 +80,54 @@ for row in aqi_mon_avg.iter_rows(named = True):
             "avg_aqi": row["avg_aqi"],
             "year": row["year"], 
             "month": row["full_month_name"], 
-            "station_name": row["station_name"]
+            "station_name": row["station_name"], 
+            "aqi_cat": row["aqi_cat"]
         }
     }
-    features.append(feature)
+        features.append(feature)
+    geojson_obj = geojson.FeatureCollection(features)
+    with open('../data/aqi_lhe_data.geojson', 'w') as f:
+        geojson.dump(geojson_obj, f)
 
-geojson_obj = geojson.FeatureCollection(features)
-with open('../data/aqi_lhe_data.geojson', 'w') as f:
-    geojson.dump(geojson_obj, f)
-
-
-
-
-# # clean the sectoral emissions 
-# pol_lst = ['PM2.5', 'SOx', 'NOx', 'CO']
-# sectoral_emissions = pl.read_csv("../data/sectoral_data_lhe.csv")
-
-# sectoral_emissions_fil = sectoral_emissions.filter(pl.col('pollutant').is_in(pol_lst))
+gen_geojson(clean_aqi())
 
 
-# sector_aggregates = sectoral_emissions_fil.group_by('sector').agg(
-#     pl.col('emissions').sum().alias('total_emissions')
-# )
+# clean the sectoral emissions 
+pol_lst = ['PM2.5', 'SOx', 'NOx', 'CO']
 
-# #print(sector_aggregates.head(10))
+def clean_sector_emissions():
+    sectoral_emissions = pl.read_csv("../data/sectoral_data_lhe.csv")
+    sectoral_emissions_fil = sectoral_emissions.filter(pl.col('pollutant')
+                                                       .is_in(pol_lst))
+    
+    return sectoral_emissions_fil
 
-# sector_pollutant_agg = \
-# sectoral_emissions_fil.group_by(['sector', 'pollutant']).agg(
-#     pl.col('emissions').sum().alias('total_emissions')
 
-# ).sort('total_emissions')
+def sector_aggregates(df): 
+    sector_aggregates = df.group_by('sector').agg(
+    pl.col('emissions').sum().alias('total_emissions')
+)
+    return sector_aggregates
 
-# print(sector_pollutant_agg.head(10))
 
-# sector_source_pollutant_agg = \
-# sectoral_emissions_fil.group_by(['sector', 'source', 'pollutant']).agg(
-#     pl.col('emissions').sum().alias('total_emissions')
-# ).sort('total_emissions', descending=True)
+def sector_pollutant_aggregates(df): 
+    sector_pollutant_agg = \
+        df.group_by(['sector', 'pollutant']).agg(
+            pl.col('emissions').sum().alias('total_emissions')
+            ).sort('total_emissions')
+    return sector_pollutant_agg
 
-# print(sector_source_pollutant_agg.head(10))
+def sector_source_pollutant_aggregates(df):
+    sector_source_pollutant_agg = \
+        df.group_by(['sector', 'source', 'pollutant']).agg(
+            pl.col('emissions').sum().alias('total_emissions')
+            ).sort('total_emissions', descending=True)
+    
+    df_sector_source = sector_source_pollutant_agg.with_columns(
+        pl.concat_str(['sector', 'source'], separator= '/').alias("sector_source")
+
+    )
+    return df_sector_source
+
+
+print(sector_source_pollutant_aggregates(clean_sector_emissions()).head(20))

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel='stylesheet' href='https://unpkg.com/maplibre-gl@5.12.0/dist/maplibre-gl.css' />
+    <script src='https://unpkg.com/maplibre-gl@5.12.0/dist/maplibre-gl.js'></script>
+    <style>
+        body { margin: 0; padding: 0; }
+        #map {
+            width: 60%;
+            height: 400px;
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>Smog City</h1>
+    <h2>Explore AQI Across Lahore</h2>
+    <div id="map"></div>
+    <script>
+        var map = new maplibregl.Map({
+            container: 'map',
+            style: 'https://api.maptiler.com/maps/streets-v4/style.json?key=z42CYMIGsRqf1ginH8SF',
+            center: [74.3587, 31.5204],
+            zoom: 10
+        });
+
+        map.on('load', () =>{
+            map.addSource('aqi_monitors', {
+                type: 'geojson', 
+                data: 'data/aqi_lhe_data_test.geojson'
+            });
+        map.addLayer({
+            id:'clusters',
+            type: 'circle', 
+            source: 'aqi_monitors', 
+            paint: {
+      'circle-radius': 6,
+      'circle-color': '#FF0000',
+      'circle-stroke-width': 1,
+      'circle-stroke-color': '#FFFFFF'
+    }
+        })
+        })
+    </script>
+
+    <h2>Explore Emissions By Sector</h2>
+    <iframe
+    id="inlineFrameExample"
+    title="Inline Frame Example"
+    width="600"
+    height="300"
+    src="altair_viz/sector_comparison.html">
+</iframe>
+
+<iframe
+id="inlineFrameExample"
+title="Inline Frame Example"
+width="600"
+height="300"
+src="altair_viz/sector_source_comparison.html">
+</iframe>
+
+</body>
+</html>
