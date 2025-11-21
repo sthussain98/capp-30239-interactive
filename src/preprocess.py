@@ -37,6 +37,12 @@ def clean_aqi():
                                                         .alias("full_month_name")
                                          ).drop('date_split').filter(pl.col("us_aqi").is_not_null())
     
+    aqi_data_lhe_clean = aqi_data_lhe_clean.with_columns(
+        pl.col('latitude').cast(pl.Float64),
+        pl.col('longitude').cast(pl.Float64)
+    )
+
+    aqi_data_lhe_clean = aqi_data_lhe_clean.drop_nulls(["longitude", "latitude"])
     # generate monthly averages of AQI readings for a monitor
     aqi_mon_avg = aqi_data_lhe_clean.group_by(['station_name', 
                                            'latitude', 
@@ -62,19 +68,22 @@ def clean_aqi():
 
 # generate a test geojson for 1 year
 
-# test_df = clean_aqi()
-# print(test_df.tail(10))
+#test_df = clean_aqi()
+#test_df.write_csv('../data/test.csv')
+#print(test_df.filter(pl.col('station_name') == 'WWF-PAKISTAN').tail(10))
 
-#print(aqi_mon_avg.head(10))
+#years = test_df.select(pl.col('year')).unique().to_series().to_list()
 
 def gen_geojson(df):
     features = []
     for row in df.iter_rows(named = True):
+        lon = round(row["longitude"], 4)
+        lat = round(row["latitude"], 4)
         feature = {
         "type": "Feature",
         "geometry": {
             "type": "Point",
-            "coordinates": [row["longitude"], row["latitude"]]
+            "coordinates": [lon, lat]
         },
         "properties": {
             "avg_aqi": row["avg_aqi"],
@@ -130,4 +139,4 @@ def sector_source_pollutant_aggregates(df):
     return df_sector_source
 
 
-print(sector_source_pollutant_aggregates(clean_sector_emissions()).head(20))
+#print(sector_source_pollutant_aggregates(clean_sector_emissions()).head(20))

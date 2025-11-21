@@ -1,0 +1,320 @@
+station_name,latitude,longitude,year,full_month_name,avg_aqi,aqi_cat
+Zacky Farms,31.4617,74.533,2023,November,402.9445652173913,Hazardous
+Polo Ground Cantt,31.5096,74.3754,2023,November,400.7195322793149,Hazardous
+Brevzon,31.448736000000004,74.369286,2023,December,387.5,Hazardous
+WWF-PAKISTAN,31.485300000000002,74.3415,2023,November,361.0472222222222,Hazardous
+Polo Ground Cantt,31.509600000000002,74.3754,2023,December,356.2105263157895,Hazardous
+Polo Ground Cantt,31.5096,74.3754,2023,February,355.8571428571429,Hazardous
+Syed Maratib Ali Road,31.529799999999998,74.3369,2023,November,349.07017543859655,Hazardous
+Polo Ground Cantt,31.509599999999995,74.3754,2023,November,346.79356060606057,Hazardous
+Zacky Farms,31.461699999999997,74.533,2023,November,339.875,Hazardous
+GENERATION Pvt ltd,31.4081,74.3584,2023,January,333.23428072651984,Hazardous
+FAST University Lahore,31.481499999999997,74.3031,2023,December,330.95454545454544,Hazardous
+Syed Maratib Ali Road,31.5298,74.3369,2023,November,329.107944857785,Hazardous
+Syed Maratib Ali Road,31.529800000000005,74.3369,2023,November,328.4194444444445,Hazardous
+University of Management and Technology,31.4515,74.2943,2023,November,319.16624317711273,Hazardous
+Shahrah-e-Quaid-e-Azam,31.548,74.346,2023,November,318.3577455153542,Hazardous
+NETSOL LHR OD,31.49678034,74.42213379,2023,November,317.3140554091641,Hazardous
+Shahrah-e-Quaid-e-Azam,31.548,74.346,2023,December,316.3116092995169,Hazardous
+FAST University Lahore,31.4815,74.3031,2023,December,307.72920788814145,Hazardous
+FAST University Lahore,31.481500000000004,74.3031,2023,December,304.2391304347826,Hazardous
+Polo Ground Cantt,31.5096,74.3754,2023,January,300.14328063241106,Hazardous
+Shahrah-e-Quaid-e-Azam,31.547999999999995,74.346,2023,November,299.43531746031744,Very Unhealthy
+Phase 8 Ivy Green,31.536299999999997,74.4845,2023,December,296.34090909090907,Very Unhealthy
+Shahrah-e-Quaid-e-Azam,31.547999999999995,74.346,2023,December,294.3351445841495,Very Unhealthy
+Chattha Park,31.624623999999997,74.28046,2023,January,292.93779904306217,Very Unhealthy
+Brevzon,31.448736,74.369286,2023,December,292.6506474846992,Very Unhealthy
+Aitchison College,31.547800000000002,74.3456,2023,November,291.4,Very Unhealthy
+University of Management and Technology,31.451499999999996,74.2943,2023,December,290.94444444444446,Very Unhealthy
+University of Management and Technology,31.451499999999996,74.2943,2023,November,290.55555555555554,Very Unhealthy
+WWF-PAKISTAN,31.4853,74.3415,2023,November,289.96087030421273,Very Unhealthy
+Polo Ground Cantt,31.5096,74.3754,2023,December,283.85701345755695,Very Unhealthy
+Zacky Farms,31.4617,74.533,2023,December,275.39910973084886,Very Unhealthy
+NETSOL LHR OD,31.496780340000004,74.42213379,2023,December,275.0952380952381,Very Unhealthy
+Brevzon,31.448736,74.369286,2023,November,273.718879007466,Very Unhealthy
+Revenue Employees Coop Housing Society,31.4506,74.2943,2023,December,273.4,Very Unhealthy
+Polo Ground Cantt,31.509599999999995,74.3754,2023,December,269.8779761904762,Very Unhealthy
+Aitchison College,31.5478,74.3456,2023,November,263.04174399471486,Very Unhealthy
+Syed Maratib Ali Road,31.5298,74.3369,2023,December,262.28173348390743,Very Unhealthy
+Phase 8 Ivy Green,31.5363,74.4845,2023,December,262.1399729793233,Very Unhealthy
+Block K,31.522598000000002,74.348595,2023,January,262.04545454545456,Very Unhealthy
+University of Management and Technology,31.4515,74.2943,2023,December,261.00851998243303,Very Unhealthy
+Phase 8 Ivy Green,31.536299999999997,74.4845,2023,January,260.5064935064935,Very Unhealthy
+Thokar Niaz Baig,31.465100000000003,74.2357,2023,December,257.6943346508564,Very Unhealthy
+WWF-PAKISTAN,31.485300000000002,74.3415,2023,December,257.6666666666667,Very Unhealthy
+Zacky Farms,31.461699999999997,74.533,2023,December,256.8827614379085,Very Unhealthy
+Polo Ground Cantt,31.509599999999995,74.3754,2023,October,254.1691176470588,Very Unhealthy
+Block K,31.522598000000002,74.348595,2023,February,254.0909090909091,Very Unhealthy
+Canal Bank Housing Scheme,31.575110000000002,74.41708,2023,January,253.73444444444445,Very Unhealthy
+Phase 8 Ivy Green,31.536300000000004,74.4845,2023,December,253.0,Very Unhealthy
+GENERATION Pvt ltd,31.4081,74.3584,2023,November,252.80131868703378,Very Unhealthy
+Thokar Niaz Baig,31.465099999999996,74.2357,2023,December,251.97569444444446,Very Unhealthy
+Chattha Park,31.624623999999997,74.28046,2023,February,248.84330143540672,Very Unhealthy
+Polo Ground Cantt,31.509599999999995,74.3754,2023,January,247.56746031746033,Very Unhealthy
+Chattha Park,31.624624,74.28046,2023,January,247.40103149955635,Very Unhealthy
+Block K,31.522598,74.348595,2023,January,247.04249479943923,Very Unhealthy
+NETSOL LHR OD,31.49678034,74.42213379,2023,December,246.8578557312253,Very Unhealthy
+CERP Office,31.5236,74.3524,2023,January,246.12584035663747,Very Unhealthy
+Syed Maratib Ali Road,31.529800000000005,74.3369,2023,December,246.08055555555558,Very Unhealthy
+CERP Office,31.5236,74.3524,2023,February,242.7402950310559,Very Unhealthy
+GENERATION Pvt ltd,31.4081,74.3584,2023,December,241.79062861768023,Very Unhealthy
+Canal Bank Housing Scheme,31.57511,74.41708000000001,2023,January,241.57142857142858,Very Unhealthy
+WWF-PAKISTAN,31.4853,74.3415,2023,December,240.68430597535456,Very Unhealthy
+Canal Bank Housing Scheme,31.57511,74.41708000000001,2023,April,240.14285714285714,Very Unhealthy
+Polo Ground Cantt,31.509599999999995,74.3754,2023,February,239.2228835978836,Very Unhealthy
+Phase 8 Ivy Green,31.5363,74.4845,2023,February,239.04545454545453,Very Unhealthy
+Empress Road,31.560755,74.33508,2023,January,238.94761904761907,Very Unhealthy
+Chattha Park,31.624624,74.28046,2023,February,238.87743558776168,Very Unhealthy
+GENERATION Pvt ltd,31.408100000000005,74.3584,2023,December,238.77124183006535,Very Unhealthy
+Venus Housing Society Main Blvd,31.43816,74.35061,2023,January,237.4879262574595,Very Unhealthy
+Pakistan Engineering Services (Pvt) Ltd.,31.4683,74.423,2023,January,234.52975811005265,Very Unhealthy
+Sector R DHA Phase 2,31.480299999999996,74.4047,2023,January,233.58823529411765,Very Unhealthy
+Syed Maratib Ali Road,31.5298,74.3369,2023,February,232.9147233201581,Very Unhealthy
+GENERATION Pvt ltd,31.4081,74.3584,2023,February,230.45787753859838,Very Unhealthy
+Shahrah-e-Quaid-e-Azam,31.547999999999995,74.346,2023,October,228.2941176470588,Very Unhealthy
+Zacky Farms,31.461700000000004,74.533,2023,December,225.95454545454547,Very Unhealthy
+Aitchison College,31.547800000000002,74.3456,2023,December,225.61111111111111,Very Unhealthy
+Block K,31.522597999999995,74.348595,2023,February,224.1304347826087,Very Unhealthy
+FAST University Lahore,31.4815,74.3031,2023,November,224.0,Very Unhealthy
+Canal Bank Housing Scheme,31.57511,74.41708,2023,January,223.90732745515353,Very Unhealthy
+Canal Bank Housing Scheme,31.575110000000002,74.41708,2023,April,223.65555555555557,Very Unhealthy
+Pakistan Engineering Services (Pvt) Ltd.,31.4683,74.423,2023,February,222.2560817805383,Very Unhealthy
+Syed Maratib Ali Road,31.529799999999998,74.3369,2023,January,222.10526315789474,Very Unhealthy
+Phase 8 Ivy Green,31.536300000000004,74.4845,2023,January,221.74534161490683,Very Unhealthy
+Canal Bank Housing Scheme,31.57511,74.41708,2023,February,221.52489801864803,Very Unhealthy
+Syed Maratib Ali Road,31.529800000000005,74.3369,2023,February,221.47282608695653,Very Unhealthy
+Revenue Employees Coop Housing Society,31.450599999999998,74.2943,2023,December,220.875,Very Unhealthy
+Canal Bank Housing Scheme,31.57511,74.41708000000001,2023,February,220.60714285714286,Very Unhealthy
+Revenue Employees Coop Housing Society,31.450600000000005,74.2943,2023,December,220.17391304347825,Very Unhealthy
+Syed Maratib Ali Road,31.529800000000005,74.3369,2023,October,219.87599206349208,Very Unhealthy
+Syed Maratib Ali Road,31.5298,74.3369,2023,January,218.8782608695652,Very Unhealthy
+Thokar Niaz Baig,31.4651,74.2357,2023,December,218.32698412698414,Very Unhealthy
+Aitchison College,31.5478,74.3456,2023,December,217.94329259217443,Very Unhealthy
+Canal Bank Housing Scheme,31.57511,74.41708,2023,March,215.08918732782368,Very Unhealthy
+Phase 8 Ivy Green,31.5363,74.4845,2023,January,214.3154669762642,Very Unhealthy
+Canal Bank Housing Scheme,31.57511,74.41708,2023,April,214.00631313131314,Very Unhealthy
+"Block A, Johar Town",31.468487,74.30314,2023,January,210.5470238095238,Very Unhealthy
+Syed Maratib Ali Road,31.529800000000005,74.3369,2023,January,209.68055555555554,Very Unhealthy
+Syed Maratib Ali Road,31.529799999999998,74.3369,2023,February,209.47368421052633,Very Unhealthy
+Syed Maratib Ali Road,31.529799999999998,74.3369,2023,December,208.89473684210526,Very Unhealthy
+Canal Bank Housing Scheme,31.575110000000002,74.41708,2023,March,208.5,Very Unhealthy
+Umar Block Allama Iqbal Town,31.5102,74.2842,2023,February,207.19967532467533,Very Unhealthy
+Sector R DHA Phase 2,31.480300000000003,74.4047,2023,January,206.55263157894737,Very Unhealthy
+Block K,31.522597999999995,74.348595,2023,January,205.5004262574595,Very Unhealthy
+Anarkali Bazaar,31.5651,74.3108,2023,April,204.0,Very Unhealthy
+Sector R DHA Phase 2,31.4803,74.4047,2023,January,201.56607142857143,Very Unhealthy
+Shahrah-e-Quaid-e-Azam,31.548,74.346,2023,October,199.7048364075538,Unhealthy
+Department Of Zoology - Punjab University,31.5016,74.3068,2023,January,199.62924144043777,Unhealthy
+Phase 5 D.H.A,31.469042,74.4085,2023,January,198.2284946236559,Unhealthy
+Phase 8 Ivy Green,31.536299999999997,74.4845,2023,February,197.84090909090907,Unhealthy
+Sector Q,31.48817,74.48341,2023,January,196.50252213896005,Unhealthy
+Block B1,31.440772999999997,74.28749,2023,January,195.96045918367346,Unhealthy
+Block K,31.522598,74.348595,2023,February,195.77902664967883,Unhealthy
+Block E1,31.436826999999997,74.271996,2023,January,195.6600790513834,Unhealthy
+Sector Q,31.488169999999997,74.48341,2023,January,194.62929061784897,Unhealthy
+Umar Block Allama Iqbal Town,31.5102,74.2842,2023,January,193.7934606154715,Unhealthy
+Phase 8 Ivy Green,31.5363,74.4845,2023,March,193.05772367426502,Unhealthy
+Phase 8 Ivy Green,31.536300000000004,74.4845,2023,March,191.97826086956522,Unhealthy
+Anarkali Bazaar,31.5651,74.3108,2023,March,190.45333333333332,Unhealthy
+Department Of Zoology - Punjab University,31.501600000000003,74.3068,2023,January,189.4125,Unhealthy
+Phase 8 Ivy Green,31.536299999999997,74.4845,2023,April,189.0909090909091,Unhealthy
+Block E1,31.436827,74.271996,2023,January,188.2792827657379,Unhealthy
+Polo Ground Cantt,31.509599999999995,74.3754,2023,March,188.16185897435895,Unhealthy
+Sector Q,31.48817,74.48341,2023,March,187.46648351648352,Unhealthy
+Sector Q,31.488170000000004,74.48341,2023,April,186.95,Unhealthy
+Venus Housing Society Main Blvd,31.43816,74.35061,2023,March,186.38511904761904,Unhealthy
+Phase 8 Ivy Green,31.536300000000004,74.4845,2023,February,186.02898550724638,Unhealthy
+Sector Q,31.488170000000004,74.48341,2023,February,186.025,Unhealthy
+Brevzon,31.448736,74.369286,2023,October,185.8444366526414,Unhealthy
+Umar Block Allama Iqbal Town,31.510200000000005,74.2842,2023,February,184.8,Unhealthy
+Syed Maratib Ali Road,31.529799999999998,74.3369,2023,March,184.57894736842104,Unhealthy
+Sector Q,31.488170000000004,74.48341,2023,March,183.10000000000002,Unhealthy
+Sector Q,31.488169999999997,74.48341,2023,February,182.34782608695653,Unhealthy
+Block E1,31.436827000000005,74.271996,2023,January,182.345,Unhealthy
+Sector Q,31.48817,74.48341,2023,February,182.3419489415813,Unhealthy
+CERP Office,31.5236,74.3524,2023,March,182.06040969899666,Unhealthy
+GENERATION Pvt ltd,31.408100000000005,74.3584,2023,February,182.05555555555554,Unhealthy
+Phase 8 Ivy Green,31.536300000000004,74.4845,2023,April,181.5108695652174,Unhealthy
+Anarkali Bazaar,31.565099999999997,74.3108,2023,January,181.5,Unhealthy
+Block B1,31.440773,74.28749,2023,January,181.3318181818182,Unhealthy
+Venus Housing Society Main Blvd,31.43816,74.35061,2023,April,181.3153594771242,Unhealthy
+Syed Maratib Ali Road,31.529800000000005,74.3369,2023,March,180.83597883597884,Unhealthy
+Anarkali Bazaar,31.565099999999997,74.3108,2023,February,180.54545454545453,Unhealthy
+Umar Block Allama Iqbal Town,31.510200000000005,74.2842,2023,January,180.48518518518517,Unhealthy
+GENERATION Pvt ltd,31.4081,74.3584,2023,October,179.72046254470166,Unhealthy
+Canal Bank Housing Scheme,31.575110000000002,74.41708,2023,February,179.52888888888887,Unhealthy
+Anarkali Bazaar,31.5651,74.3108,2023,May,178.8708333333333,Unhealthy
+GENERATION Pvt ltd,31.408099999999997,74.3584,2023,January,178.3846153846154,Unhealthy
+Sector R DHA Phase 2,31.4803,74.4047,2023,February,177.67849794238683,Unhealthy
+Aitchison College,31.5478,74.3456,2023,October,177.65520474733307,Unhealthy
+"Block A, Johar Town",31.468487,74.30314,2023,February,177.38816391941393,Unhealthy
+"Block A, Johar Town",31.468487000000003,74.30314,2023,January,176.88618925831202,Unhealthy
+Umar Block Allama Iqbal Town,31.5102,74.2842,2023,March,176.76388888888889,Unhealthy
+Polo Ground Cantt,31.509600000000002,74.3754,2023,May,176.42105263157896,Unhealthy
+Phase 8 Ivy Green,31.5363,74.4845,2023,April,176.325,Unhealthy
+Anarkali Bazaar,31.5651,74.3108,2023,January,175.9768715266427,Unhealthy
+Polo Ground Cantt,31.5096,74.3754,2023,October,175.75,Unhealthy
+Syed Maratib Ali Road,31.5298,74.3369,2023,March,175.07430684724486,Unhealthy
+Sector Q,31.48817,74.48341,2023,April,172.95830675563295,Unhealthy
+Sector Q,31.488170000000004,74.48341,2023,January,172.4,Unhealthy
+Pakistan Engineering Services (Pvt) Ltd.,31.4683,74.423,2023,March,171.56387436780145,Unhealthy
+Anarkali Bazaar,31.5651,74.3108,2023,February,170.52619047619046,Unhealthy
+Anarkali Bazaar,31.565100000000005,74.3108,2023,January,169.80769230769232,Unhealthy
+Department Of Zoology - Punjab University,31.5016,74.3068,2023,March,169.7046783625731,Unhealthy
+Chattha Park,31.624623999999997,74.28046,2023,March,169.28947368421052,Unhealthy
+Phase 5 D.H.A,31.469042,74.4085,2023,February,168.9871399176955,Unhealthy
+Anarkali Bazaar,31.565100000000005,74.3108,2023,February,168.78490028490026,Unhealthy
+Block B1,31.440773,74.28749,2023,February,168.48401872250557,Unhealthy
+Polo Ground Cantt,31.5096,74.3754,2023,May,168.4661616161616,Unhealthy
+Polo Ground Cantt,31.5096,74.3754,2023,March,165.5878260869565,Unhealthy
+Syed Maratib Ali Road,31.5298,74.3369,2023,October,165.29813664596273,Unhealthy
+Eden Cottages,31.485900000000004,74.3735,2023,May,165.05,Unhealthy
+Block B1,31.440772999999997,74.28749,2023,February,163.3125,Unhealthy
+CERP Office,31.523600000000002,74.3524,2023,March,161.61111111111111,Unhealthy
+Block E1,31.436827000000005,74.271996,2023,February,161.28044871794873,Unhealthy
+Chattha Park,31.624624,74.28046,2023,March,160.95519077196096,Unhealthy
+Block B1,31.440772999999997,74.28749,2023,May,160.20833333333334,Unhealthy
+Block B1,31.440772999999997,74.28749,2023,June,159.86111111111111,Unhealthy
+Chattha Park,31.624623999999997,74.28046,2023,April,159.20287081339714,Unhealthy
+CERP Office,31.5236,74.3524,2023,July,158.95833333333331,Unhealthy
+CERP Office,31.5236,74.3524,2023,October,158.9,Unhealthy
+Block B1,31.440773,74.28749,2023,May,158.85318431568433,Unhealthy
+Phase 8 Ivy Green,31.536299999999997,74.4845,2023,March,158.0909090909091,Unhealthy
+Block B1,31.440773,74.28749,2023,June,157.60741758241758,Unhealthy
+Block E1,31.436827,74.271996,2023,February,157.41339869281046,Unhealthy
+Syed Maratib Ali Road,31.529800000000005,74.3369,2023,May,157.21759259259258,Unhealthy
+Block B1,31.440773,74.28749,2023,March,157.09264164967072,Unhealthy
+Sector Q,31.488169999999997,74.48341,2023,May,156.2608695652174,Unhealthy
+Block B1,31.440773,74.28749,2023,July,155.83333333333334,Unhealthy
+Sector Q,31.488170000000004,74.48341,2023,May,155.8,Unhealthy
+Block B1,31.440772999999997,74.28749,2023,March,155.7638888888889,Unhealthy
+GENERATION Pvt ltd,31.4081,74.3584,2023,March,155.456873665013,Unhealthy
+Sector Q,31.48817,74.48341,2023,May,154.9893257783883,Unhealthy
+Police Road near Masjid,31.4921,74.2708,2023,March,154.375,Unhealthy
+Syed Maratib Ali Road,31.5298,74.3369,2023,September,154.32167325428193,Unhealthy
+GENERATION Pvt ltd,31.408100000000005,74.3584,2023,September,153.55555555555554,Unhealthy
+CERP Office,31.523600000000002,74.3524,2023,April,152.83333333333334,Unhealthy
+Chattha Park,31.624624,74.28046,2023,May,152.72016288399416,Unhealthy
+GENERATION Pvt ltd,31.408100000000005,74.3584,2023,March,152.5,Unhealthy
+CERP Office,31.5236,74.3524,2023,August,151.80747126436782,Unhealthy
+Department Of Zoology - Punjab University,31.5016,74.3068,2023,February,151.59876642964878,Unhealthy
+Department Of Zoology - Punjab University,31.501600000000003,74.3068,2023,March,151.45000000000002,Unhealthy
+Department Of Zoology - Punjab University,31.501600000000003,74.3068,2023,April,151.4,Unhealthy
+Syed Maratib Ali Road,31.5298,74.3369,2023,April,150.93243324997982,Unhealthy
+Chattha Park,31.624624,74.28046,2023,June,150.4110791538123,Unhealthy
+Syed Maratib Ali Road,31.5298,74.3369,2023,May,150.39204545454544,Unhealthy
+CERP Office,31.5236,74.3524,2023,September,148.97790404040404,Unhealthy for Sensitive Groups
+Syed Maratib Ali Road,31.529800000000005,74.3369,2023,September,148.00462962962962,Unhealthy for Sensitive Groups
+Chattha Park,31.624623999999997,74.28046,2023,June,146.7757177033493,Unhealthy for Sensitive Groups
+CERP Office,31.5236,74.3524,2023,May,146.61349267968058,Unhealthy for Sensitive Groups
+CERP Office,31.5236,74.3524,2023,April,145.42492503748124,Unhealthy for Sensitive Groups
+Eden Cottages,31.4859,74.3735,2023,March,145.07666666666665,Unhealthy for Sensitive Groups
+Chattha Park,31.624623999999997,74.28046,2023,July,144.51196172248805,Unhealthy for Sensitive Groups
+CERP Office,31.5236,74.3524,2023,June,144.0542545015371,Unhealthy for Sensitive Groups
+Anarkali Bazaar,31.5651,74.3108,2023,June,143.92307692307693,Unhealthy for Sensitive Groups
+Syed Maratib Ali Road,31.5298,74.3369,2023,August,143.8,Unhealthy for Sensitive Groups
+Polo Ground Cantt,31.509599999999995,74.3754,2023,April,143.225,Unhealthy for Sensitive Groups
+GENERATION Pvt ltd,31.408100000000005,74.3584,2023,July,142.90196078431373,Unhealthy for Sensitive Groups
+Anarkali Bazaar,31.565099999999997,74.3108,2023,June,142.72727272727272,Unhealthy for Sensitive Groups
+Chattha Park,31.624624,74.28046,2023,April,141.1902271062271,Unhealthy for Sensitive Groups
+Venus Housing Society Main Blvd,31.43816,74.35061,2023,February,141.15896358543415,Unhealthy for Sensitive Groups
+Syed Maratib Ali Road,31.529800000000005,74.3369,2023,August,140.90104166666666,Unhealthy for Sensitive Groups
+Chattha Park,31.624624,74.28046,2023,July,140.74492954104718,Unhealthy for Sensitive Groups
+Syed Maratib Ali Road,31.529800000000005,74.3369,2023,April,140.6540404040404,Unhealthy for Sensitive Groups
+Chattha Park,31.624623999999997,74.28046,2023,May,140.27272727272728,Unhealthy for Sensitive Groups
+"Block A, Johar Town",31.468487,74.30314,2023,March,139.24327956989248,Unhealthy for Sensitive Groups
+Polo Ground Cantt,31.509599999999995,74.3754,2023,May,139.0375,Unhealthy for Sensitive Groups
+Brevzon,31.448736,74.369286,2023,March,138.15530303030303,Unhealthy for Sensitive Groups
+Sector R DHA Phase 2,31.4803,74.4047,2023,July,137.5,Unhealthy for Sensitive Groups
+Sector R DHA Phase 2,31.480299999999996,74.4047,2023,February,137.42857142857142,Unhealthy for Sensitive Groups
+Sector R DHA Phase 2,31.4803,74.4047,2023,March,137.28863636363636,Unhealthy for Sensitive Groups
+Department Of Zoology - Punjab University,31.501600000000003,74.3068,2023,February,136.4111111111111,Unhealthy for Sensitive Groups
+Pakistan Engineering Services (Pvt) Ltd.,31.4683,74.423,2023,May,134.9462471843257,Unhealthy for Sensitive Groups
+Pakistan Engineering Services (Pvt) Ltd.,31.4683,74.423,2023,April,134.62396331738438,Unhealthy for Sensitive Groups
+Anarkali Bazaar,31.565100000000005,74.3108,2023,June,134.3846153846154,Unhealthy for Sensitive Groups
+Eden Cottages,31.485899999999997,74.3735,2023,March,133.07142857142858,Unhealthy for Sensitive Groups
+Chattha Park,31.624624,74.28046,2023,August,132.8,Unhealthy for Sensitive Groups
+Eden Cottages,31.4859,74.3735,2023,May,132.55759359903382,Unhealthy for Sensitive Groups
+Phase 5 D.H.A,31.469042,74.4085,2023,March,130.6290322580645,Unhealthy for Sensitive Groups
+Phase 5 D.H.A,31.469042000000005,74.4085,2023,February,130.34782608695653,Unhealthy for Sensitive Groups
+Block K,31.522598,74.348595,2023,March,128.5,Unhealthy for Sensitive Groups
+Shahrah-e-Quaid-e-Azam,31.548,74.346,2023,September,128.40175120772946,Unhealthy for Sensitive Groups
+Pakistan Engineering Services (Pvt) Ltd.,31.4683,74.423,2023,June,128.3154761904762,Unhealthy for Sensitive Groups
+GENERATION Pvt ltd,31.4081,74.3584,2023,September,126.3910277004355,Unhealthy for Sensitive Groups
+GENERATION Pvt ltd,31.4081,74.3584,2023,June,125.88465132693393,Unhealthy for Sensitive Groups
+Aitchison College,31.5478,74.3456,2023,September,125.85481444883618,Unhealthy for Sensitive Groups
+Block E1,31.436827000000005,74.271996,2023,March,124.25143678160919,Unhealthy for Sensitive Groups
+GENERATION Pvt ltd,31.4081,74.3584,2023,May,123.7611543202006,Unhealthy for Sensitive Groups
+GENERATION Pvt ltd,31.4081,74.3584,2023,April,122.9617013300709,Unhealthy for Sensitive Groups
+Block K,31.522598,74.348595,2023,June,122.80753968253968,Unhealthy for Sensitive Groups
+Block K,31.522598000000002,74.348595,2023,June,122.65151515151517,Unhealthy for Sensitive Groups
+"Block A, Johar Town",31.468487000000003,74.30314,2023,July,122.58226768968457,Unhealthy for Sensitive Groups
+Brevzon,31.448736,74.369286,2023,September,122.17083333333333,Unhealthy for Sensitive Groups
+Department Of Zoology - Punjab University,31.5016,74.3068,2023,June,121.95870072909547,Unhealthy for Sensitive Groups
+GENERATION Pvt ltd,31.4081,74.3584,2023,July,120.38094426812567,Unhealthy for Sensitive Groups
+Eden Cottages,31.4859,74.3735,2023,April,120.31081273088945,Unhealthy for Sensitive Groups
+Anarkali Bazaar,31.5651,74.3108,2023,July,120.22222222222221,Unhealthy for Sensitive Groups
+Aitchison College,31.5478,74.3456,2023,June,120.0630945658896,Unhealthy for Sensitive Groups
+Aitchison College,31.5478,74.3456,2023,May,119.76118964743404,Unhealthy for Sensitive Groups
+GENERATION Pvt ltd,31.4081,74.3584,2023,August,118.76788571102627,Unhealthy for Sensitive Groups
+Block K,31.522598,74.348595,2023,July,118.5778318903319,Unhealthy for Sensitive Groups
+Block K,31.522597999999995,74.348595,2023,June,118.0,Unhealthy for Sensitive Groups
+Brevzon,31.448736,74.369286,2023,May,117.5275829827022,Unhealthy for Sensitive Groups
+Block E1,31.436826999999997,74.271996,2023,March,116.97826086956522,Unhealthy for Sensitive Groups
+Shahrah-e-Quaid-e-Azam,31.548,74.346,2023,July,116.9125,Unhealthy for Sensitive Groups
+Block E1,31.436827,74.271996,2023,April,116.38245327370714,Unhealthy for Sensitive Groups
+Brevzon,31.448736,74.369286,2023,April,116.19583333333334,Unhealthy for Sensitive Groups
+Department Of Zoology - Punjab University,31.501600000000003,74.3068,2023,June,115.95,Unhealthy for Sensitive Groups
+Brevzon,31.448736,74.369286,2023,June,115.89940260524499,Unhealthy for Sensitive Groups
+Aitchison College,31.5478,74.3456,2023,August,115.06944166165765,Unhealthy for Sensitive Groups
+Aitchison College,31.5478,74.3456,2023,July,114.5202868470311,Unhealthy for Sensitive Groups
+Brevzon,31.448736,74.369286,2023,August,113.34814935890451,Unhealthy for Sensitive Groups
+Shahrah-e-Quaid-e-Azam,31.548,74.346,2023,August,112.77616459627329,Unhealthy for Sensitive Groups
+"Block A, Johar Town",31.468486999999996,74.30314,2023,June,112.5,Unhealthy for Sensitive Groups
+"Block A, Johar Town",31.468487,74.30314,2023,June,112.2216158211621,Unhealthy for Sensitive Groups
+GENERATION Pvt ltd,31.408100000000005,74.3584,2023,October,112.16666666666667,Unhealthy for Sensitive Groups
+Brevzon,31.448736000000004,74.369286,2023,June,112.00185185185187,Unhealthy for Sensitive Groups
+"Block A, Johar Town",31.468486999999996,74.30314,2023,May,111.89393939393939,Unhealthy for Sensitive Groups
+Aitchison College,31.547800000000002,74.3456,2023,May,111.725,Unhealthy for Sensitive Groups
+"Block A, Johar Town",31.468487000000003,74.30314,2023,August,111.69565217391305,Unhealthy for Sensitive Groups
+Brevzon,31.448736,74.369286,2023,July,111.20190509583918,Unhealthy for Sensitive Groups
+Block E1,31.436826999999997,74.271996,2023,April,110.37417654808958,Unhealthy for Sensitive Groups
+"Block A, Johar Town",31.468487,74.30314,2023,April,110.00297619047619,Unhealthy for Sensitive Groups
+Department Of Zoology - Punjab University,31.5016,74.3068,2023,September,109.5,Unhealthy for Sensitive Groups
+"Block A, Johar Town",31.468487,74.30314,2023,May,107.7694099378882,Unhealthy for Sensitive Groups
+"Block A, Johar Town",31.468486999999996,74.30314,2023,July,107.39772727272728,Unhealthy for Sensitive Groups
+Aitchison College,31.547800000000002,74.3456,2023,June,105.77777777777777,Unhealthy for Sensitive Groups
+CERP Office,31.523600000000002,74.3524,2023,May,105.16666666666667,Unhealthy for Sensitive Groups
+"Block A, Johar Town",31.468487,74.30314,2023,July,104.05615383945975,Unhealthy for Sensitive Groups
+"Block A, Johar Town",31.468486999999996,74.30314,2023,April,103.77272727272727,Unhealthy for Sensitive Groups
+Sector Q,31.48817,74.48341,2023,June,103.3359889934995,Unhealthy for Sensitive Groups
+Shahrah-e-Quaid-e-Azam,31.547999999999995,74.346,2023,July,101.77777777777777,Unhealthy for Sensitive Groups
+Department Of Zoology - Punjab University,31.5016,74.3068,2023,August,100.83745026902922,Unhealthy for Sensitive Groups
+Phase 5 D.H.A,31.469042000000005,74.4085,2023,May,100.47826086956522,Unhealthy for Sensitive Groups
+"Block A, Johar Town",31.468487000000003,74.30314,2023,April,100.17391304347827,Unhealthy for Sensitive Groups
+Phase 5 D.H.A,31.469041999999998,74.4085,2023,June,99.86507936507935,Moderate
+"Block A, Johar Town",31.468487,74.30314,2023,August,98.46574675324676,Moderate
+Department Of Zoology - Punjab University,31.5016,74.3068,2023,July,98.06518490797129,Moderate
+"Block A, Johar Town",31.468487000000003,74.30314,2023,May,97.74782608695652,Moderate
+Block E1,31.436827000000005,74.271996,2023,April,97.47348484848484,Moderate
+Aitchison College,31.5478,74.3456,2023,April,96.70576923076922,Moderate
+Department Of Zoology - Punjab University,31.501600000000003,74.3068,2023,July,95.77037037037037,Moderate
+Department Of Zoology - Punjab University,31.501600000000003,74.3068,2023,August,94.70952380952382,Moderate
+Phase 5 D.H.A,31.469042,74.4085,2023,September,93.24073294130112,Moderate
+Phase 5 D.H.A,31.469042,74.4085,2023,May,92.88863636363637,Moderate
+Phase 5 D.H.A,31.469041999999998,74.4085,2023,September,89.57422969187675,Moderate
+Phase 5 D.H.A,31.469042,74.4085,2023,April,89.49305555555556,Moderate
+Phase 5 D.H.A,31.469042,74.4085,2023,August,89.11772486772486,Moderate
+Block E1,31.436827,74.27199600000002,2023,April,87.83333333333333,Moderate
+Block K,31.522597999999995,74.348595,2023,July,87.83312020460357,Moderate
+Phase 5 D.H.A,31.469042,74.4085,2023,June,85.77845117845118,Moderate
+Phase 5 D.H.A,31.469041999999998,74.4085,2023,August,83.80392156862746,Moderate
+Phase 5 D.H.A,31.469042,74.4085,2023,July,83.54482323232324,Moderate
+Phase 5 D.H.A,31.469042000000005,74.4085,2023,August,81.08649885583523,Moderate
+Phase 5 D.H.A,31.469042000000005,74.4085,2023,June,78.67391304347827,Moderate
+"Block A, Johar Town",31.468486999999996,74.30314,2023,August,76.95454545454545,Moderate
+Sector Q,31.488170000000004,74.48341,2023,July,73.3,Moderate
+Block K,31.522598,74.348595,2023,April,70.90625,Moderate
+Phase 5 D.H.A,31.469042000000005,74.4085,2023,July,60.869565217391305,Moderate
+Sector Q,31.48817,74.48341,2023,July,45.32340095801634,Good
+Sector Q,31.48817,74.48341,2023,August,8.0,Good

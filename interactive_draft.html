@@ -4,17 +4,68 @@
     <link rel='stylesheet' href='https://unpkg.com/maplibre-gl@5.12.0/dist/maplibre-gl.css' />
     <script src='https://unpkg.com/maplibre-gl@5.12.0/dist/maplibre-gl.js'></script>
     <style>
-        body { margin: 0; padding: 0; }
+        body { 
+            margin: 0; 
+            padding: 0}
         #map {
-            width: 60%;
-            height: 400px;
+            width: 80%;
+            height: 500px;
             margin: auto;
+        }
+        .color-box.good {
+            background-color: #00E400;
         }
     </style>
 </head>
 <body>
     <h1>Smog City</h1>
     <h2>Explore AQI Across Lahore</h2>
+    <label  for = 'pick-year'> Pick a year:</label>
+    <select name="years" id="pick-year">
+        <option value="">--Please choose an option--</option>
+        <option value="2016">2016</option>
+        <option value="2017">2017</option>
+        <option value="2018">2018</option>
+        <option value="2019">2019</option>
+        <option value="2020">2020</option>
+        <option value="2021">2021</option>
+        <option value="2022">2022</option>
+        <option value="2023">2023</option>
+        <option value="2024">2024</option>
+        <option value="2025">2025</option>
+      </select>
+    <label id="month" for="slider"></label>
+    <input id="slider" type="range" min="0" max="11" step="1" value="0" />
+    <h3> Map Legend</h3>
+
+    <svg width="260" height="420" viewBox="0 0 260 420" xmlns="http://www.w3.org/2000/svg">
+        <!-- 1: Good -->
+        <circle cx="40" cy="40" r="12" fill="#00E400" stroke="black"></circle>
+        <text x="70" y="45" font-size="10" font-family="sans-serif" text-anchor="start">Good</text>
+      
+        <!-- 2: Moderate -->
+        <circle cx="40" cy="100" r="12" fill="#FFFF00" stroke="black"></circle>
+        <text x="70" y="105" font-size="10" font-family="sans-serif" text-anchor="start">Moderate</text>
+      
+        <!-- 3: Unhealthy for Sensitive Group -->
+        <circle cx="40" cy="160" r="12" fill="#FF7E00" stroke="black"></circle>
+        <text x="70" y="165" font-size="10" font-family="sans-serif" text-anchor="start">
+          Unhealthy for Sensitive Group
+        </text>
+      
+        <!-- 4: Unhealthy -->
+        <circle cx="40" cy="220" r="12" fill="#FF0000" stroke="black"></circle>
+        <text x="70" y="225" font-size="10" font-family="sans-serif" text-anchor="start">Unhealthy</text>
+      
+        <!-- 5: Very Unhealthy -->
+        <circle cx="40" cy="280" r="12" fill="#8F3F97" stroke="black"></circle>
+        <text x="70" y="285" font-size="10" font-family="sans-serif" text-anchor="start">Very Unhealthy</text>
+      
+        <!-- 6: Hazardous -->
+        <circle cx="40" cy="340" r="12" fill="#7E0023" stroke="black"></circle>
+        <text x="70" y="345" font-size="10" font-family="sans-serif" text-anchor="start">Hazardous</text>
+      </svg>
+                        
     <div id="map"></div>
     <script>
         var map = new maplibregl.Map({
@@ -23,42 +74,125 @@
             center: [74.3587, 31.5204],
             zoom: 10
         });
+        const months = [
+            'January',
+            'February',
+            'March',
+            'April',
+            'May',
+            'June',
+            'July',
+            'August',
+            'September',
+            'October',
+            'November',
+            'December'
+        ];
+        
+        const years = [
+            '2016', 
+            '2017',
+            '2018', 
+            '2019', 
+            '2020', 
+            '2021', 
+            '2022', 
+            '2023', 
+            '2024', 
+            '2025'
+    
+        ]
+        
+        /*function filterByOctober() {
+            map.setFilter('clusters', ['==', ['get', 'month'], 'October']);}*/
+
+
+        // combine into one function
+        function filterBy(month, year){
+            const filters = ['all', ['==', ['get', 'month'], month], ['==', ['get', 'year'], year]]
+            map.setFilter('clusters', filters)
+            document.getElementById('month').textContent = month
+
+        }
+
+
+
+        /*function filterByMonth(month) {
+            const filters = ['==', 'month', month];
+            map.setFilter('clusters', filters);
+        // Set the label to the month
+        document.getElementById('month').textContent = month;
+    }
+        function filterByYear(year){
+            const filters = ['==', 'year', year];
+            map.setFilter('clusters', filters)
+        }*/
 
         map.on('load', () =>{
             map.addSource('aqi_monitors', {
                 type: 'geojson', 
-                data: 'data/aqi_lhe_data_test.geojson'
+                data: 'data/aqi_lhe_data.geojson'
+
             });
+
         map.addLayer({
             id:'clusters',
             type: 'circle', 
             source: 'aqi_monitors', 
             paint: {
-      'circle-radius': 6,
-      'circle-color': '#FF0000',
-      'circle-stroke-width': 1,
-      'circle-stroke-color': '#FFFFFF'
-    }
-        })
-        })
+        'circle-radius': 12,
+        'circle-color': [
+            'match',
+            ['downcase', ['get', 'aqi_cat']],
+            'good', '#00E400',
+            'moderate', '#FFFF00',
+            'unhealthy for sensitive groups', '#FF7E00',
+            'unhealthy', '#FF0000',
+            'very unhealthy', '#8F3F97',
+            'hazardous', '#7E0023',
+            '#bddee8']
+           }});
+
+        // caled when the slider or the drop down is moved   
+        function monthYearHandler(){
+            const month = document.getElementById('slider').value
+            const monthName = months[month]
+            const year = document.getElementById('pick-year').value
+            filterBy(monthName, year)
+        }
+        
+        // whenever there is an input event on the slider or drop down then call the function
+        document.getElementById('slider').addEventListener('input', monthYearHandler);
+
+        document.getElementById('pick-year').addEventListener('input', monthYearHandler)
+
+
+        
+});
     </script>
 
     <h2>Explore Emissions By Sector</h2>
-    <iframe
-    id="inlineFrameExample"
-    title="Inline Frame Example"
-    width="600"
-    height="300"
-    src="altair_viz/sector_comparison.html">
-</iframe>
+    <div>
+        <embed
+        id="inlineFrameExample"
+        title="Inline Frame Example"
+        width="600"
+        height="300"
+        src="altair_viz/sector_comparison.html">
 
-<iframe
+    </div>
+
+    <div>
+        <embed
 id="inlineFrameExample"
 title="Inline Frame Example"
-width="600"
+width="1000"
 height="300"
-src="altair_viz/sector_source_comparison.html">
-</iframe>
+src="altair_viz/sector_source_comparison.html"> 
+</div>
+
+
+
 
 </body>
 </html>
