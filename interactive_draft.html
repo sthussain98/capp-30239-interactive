@@ -8,23 +8,63 @@
             margin: 0; 
             padding: 0}
         #map {
-            width: 80%;
+            width: 50%;
             height: 500px;
             margin: auto;
         }
         .color-box.good {
             background-color: #00E400;
         }
+        h1{
+            padding: 10px;
+            font: bold 50px "Roboto Condensed",sans-serif 
+        }
+        h2{
+            padding: 10px;        
+            font: bold 30px "Roboto Condensed",sans-serif 
+        }
+        h4{
+            padding: 10px;
+            font: bold 20px "Roboto Condensed",sans-serif 
+        }
+        p {
+            padding: 10px;        
+            width:65%;
+            font:15px "Roboto Condensed",sans-serif 
+
+        }
+        label{
+            padding: 10px;  
+            font:bold 15px "Roboto Condensed",sans-serif 
+ 
+        }
+        .map-legend{
+            padding: 10px;        
+
+        }
+        li{
+            width:65%;
+
+            font: 15px "Roboto Condensed",sans-serif 
+
+
+        }
     </style>
 </head>
 <body>
     <h1>Smog City</h1>
-    <h2>Explore AQI Across Lahore</h2>
+    <p> 
+        According to the 6th Annual World Air Quality Report, Pakistan was ranked as the second most polluted country in the world, with PM2.5 concentrations approximately 14 times higher than the World Health Organization (WHO) guideline levels (IQAir, 2024). More specifically, Lahore is the second most polluted city in the world (IQAir). Through this project I want to explore how the air quality index (AQI) has changed over time in Lahore and how it changes across different seasons (months).    </p>
+        <h4> How is air quality measured?</h4>
+    <p> 
+        Each circle on the map represents an air quality monitoring station and shows its average monthly value. These values use the U.S. Air Quality Index (AQI).
+        Air quality is reported using the AQI, which has six categories that indicate the level of health concern, each represented by a specific color. The AQI is calculated based on measurements of: Particulate matter (PM2.5 and PM10), Ozone, Nitrogen dioxide, Sulfur dioxide, Carbon monoxide.
+          
+    </p>
+<h2>Explore AQI Across Lahore</h2>
     <label  for = 'pick-year'> Pick a year:</label>
     <select name="years" id="pick-year">
         <option value="">--Please choose an option--</option>
-        <option value="2016">2016</option>
-        <option value="2017">2017</option>
         <option value="2018">2018</option>
         <option value="2019">2019</option>
         <option value="2020">2020</option>
@@ -34,38 +74,46 @@
         <option value="2024">2024</option>
         <option value="2025">2025</option>
       </select>
-    <label id="month" for="slider"></label>
+    <label id="month" for="slider">Pick a month:</label>
     <input id="slider" type="range" min="0" max="11" step="1" value="0" />
-    <h3> Map Legend</h3>
-
-    <svg width="260" height="420" viewBox="0 0 260 420" xmlns="http://www.w3.org/2000/svg">
-        <!-- 1: Good -->
-        <circle cx="40" cy="40" r="12" fill="#00E400" stroke="black"></circle>
-        <text x="70" y="45" font-size="10" font-family="sans-serif" text-anchor="start">Good</text>
-      
-        <!-- 2: Moderate -->
-        <circle cx="40" cy="100" r="12" fill="#FFFF00" stroke="black"></circle>
-        <text x="70" y="105" font-size="10" font-family="sans-serif" text-anchor="start">Moderate</text>
-      
-        <!-- 3: Unhealthy for Sensitive Group -->
-        <circle cx="40" cy="160" r="12" fill="#FF7E00" stroke="black"></circle>
-        <text x="70" y="165" font-size="10" font-family="sans-serif" text-anchor="start">
-          Unhealthy for Sensitive Group
+    
+    <h4> Map Legend</h4>
+    <div class = "map-legend"> 
+    <svg width="300" height="60" viewBox="0 0 300 60" xmlns="http://www.w3.org/2000/svg">
+        <rect x="0" y="0" width="50" height="60" fill="#478c5c" stroke="black"></rect>
+        <text x="25" y="30" font-size="10" font-family="sans-serif" text-anchor="middle" dominant-baseline="middle">
+          Good
         </text>
       
-        <!-- 4: Unhealthy -->
-        <circle cx="40" cy="220" r="12" fill="#FF0000" stroke="black"></circle>
-        <text x="70" y="225" font-size="10" font-family="sans-serif" text-anchor="start">Unhealthy</text>
+        <rect x="50" y="0" width="50" height="60" fill="#fede00" stroke="black"></rect>
+        <text x="75" y="30" font-size="10" font-family="sans-serif" text-anchor="middle" dominant-baseline="middle">
+          Moderate
+        </text>
       
-        <!-- 5: Very Unhealthy -->
-        <circle cx="40" cy="280" r="12" fill="#8F3F97" stroke="black"></circle>
-        <text x="70" y="285" font-size="10" font-family="sans-serif" text-anchor="start">Very Unhealthy</text>
+        <rect x="100" y="0" width="50" height="60" fill="#FF7E00" stroke="black"></rect>
+        <text font-size="8" font-family="sans-serif" text-anchor="middle" dominant-baseline="middle">
+          <tspan x="125" y="25">Unhealthy</tspan>
+          <tspan x="125" y="37">for Sensitive</tspan>
+        </text>
       
-        <!-- 6: Hazardous -->
-        <circle cx="40" cy="340" r="12" fill="#7E0023" stroke="black"></circle>
-        <text x="70" y="345" font-size="10" font-family="sans-serif" text-anchor="start">Hazardous</text>
+        <rect x="150" y="0" width="50" height="60" fill="#e21b32" stroke="black"></rect>
+        <text x="175" y="30" font-size="10" font-family="sans-serif" text-anchor="middle" dominant-baseline="middle">
+          Unhealthy
+        </text>
+      
+        <rect x="200" y="0" width="50" height="60" fill="#8F3F97" stroke="black"></rect>
+        <text font-size="8" font-family="sans-serif" text-anchor="middle" dominant-baseline="middle">
+          <tspan x="225" y="25">Very</tspan>
+          <tspan x="225" y="37">Unhealthy</tspan>
+        </text>
+      
+        <rect x="250" y="0" width="50" height="60" fill="#7E0023" stroke="black"></rect>
+        <text x="275" y="30" font-size="9" font-family="sans-serif" text-anchor="middle" dominant-baseline="middle" fill="white">
+          Hazardous
+        </text>
       </svg>
-                        
+    </div>
+                              
     <div id="map"></div>
     <script>
         var map = new maplibregl.Map({
@@ -144,10 +192,10 @@
         'circle-color': [
             'match',
             ['downcase', ['get', 'aqi_cat']],
-            'good', '#00E400',
-            'moderate', '#FFFF00',
+            'good', '#478c5c',
+            'moderate', '#fede00',
             'unhealthy for sensitive groups', '#FF7E00',
-            'unhealthy', '#FF0000',
+            'unhealthy', '#e21b32',
             'very unhealthy', '#8F3F97',
             'hazardous', '#7E0023',
             '#bddee8']
@@ -172,7 +220,19 @@
     </script>
 
     <h2>Explore Emissions By Sector</h2>
-    <div>
+    <p> In response to worsening air quality, the Punjab government has implemented various policy tools, though many have proven ineffective or poorly designed. For example, in 2023, the government resorted to smart lockdowns, mandating the temporary closure of schools, offices, and businesses to reduce vehicular emissions. However, this approach mirrored the province's earlier COVID 19 lockdown strategy rather than a targeted environmental intervention. The policy ultimately failed to achieve its goals, as many citizens treated the shutdown as a "long weekend" and continued to drive to social gatherings.
+        Moreover, the policy was met with strong opposition from restaurant owners and small businesses, who argued that the true culprits were large industrial manufacturers and unregulated factories emitting significant pollutants. This raises several important questions:
+    </p>
+<ol>
+  <li>
+    What regulatory strategies has the federal government implemented to address factory emissions?
+  </li>
+  <li>
+    How should the costs of pollution be distributed? Should the focus be on vehicular emissions, industrial polluters, or agricultural practices like crop burning, which remains prevalent among farmers in Punjab?
+  </li>
+</ol>
+    
+        <div>
         <embed
         id="inlineFrameExample"
         title="Inline Frame Example"
