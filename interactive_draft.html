@@ -3,6 +3,8 @@
 <head>
     <link rel='stylesheet' href='https://unpkg.com/maplibre-gl@5.12.0/dist/maplibre-gl.css' />
     <script src='https://unpkg.com/maplibre-gl@5.12.0/dist/maplibre-gl.js'></script>
+    <script src="https://unpkg.com/d3@5"></script>
+    <script src="https://unpkg.com/d3-sankey@0.12.3"></script>
     <style>
         body { 
             margin: 0; 
@@ -11,9 +13,6 @@
             width: 50%;
             height: 500px;
             margin: auto;
-        }
-        .color-box.good {
-            background-color: #00E400;
         }
         h1{
             padding: 10px;
@@ -38,17 +37,19 @@
             font:bold 15px "Roboto Condensed",sans-serif 
  
         }
-        .map-legend{
+        #map-legend{
             padding: 10px;        
 
         }
         li{
             width:65%;
-
             font: 15px "Roboto Condensed",sans-serif 
 
-
         }
+        #month-display{
+            font: 15px "Roboto Condensed",sans-serif 
+        }
+
     </style>
 </head>
 <body>
@@ -62,6 +63,7 @@
           
     </p>
 <h2>Explore AQI Across Lahore</h2>
+
     <label  for = 'pick-year'> Pick a year:</label>
     <select name="years" id="pick-year">
         <option value="">--Please choose an option--</option>
@@ -74,8 +76,15 @@
         <option value="2024">2024</option>
         <option value="2025">2025</option>
       </select>
-    <label id="month" for="slider">Pick a month:</label>
-    <input id="slider" type="range" min="0" max="11" step="1" value="0" />
+      
+      <div>
+        <label id="month" for="slider">Month:</label>
+        <input id="slider" type="range" min="0" max="11" step="1" value="0" />
+        <span id="month-display"></span>
+
+      </div>
+
+ 
     
     <h4> Map Legend</h4>
     <div class = "map-legend"> 
@@ -115,143 +124,18 @@
     </div>
                               
     <div id="map"></div>
-    <script>
-        var map = new maplibregl.Map({
-            container: 'map',
-            style: 'https://api.maptiler.com/maps/streets-v4/style.json?key=z42CYMIGsRqf1ginH8SF',
-            center: [74.3587, 31.5204],
-            zoom: 10
-        });
-        const months = [
-            'January',
-            'February',
-            'March',
-            'April',
-            'May',
-            'June',
-            'July',
-            'August',
-            'September',
-            'October',
-            'November',
-            'December'
-        ];
-        
-        const years = [
-            '2016', 
-            '2017',
-            '2018', 
-            '2019', 
-            '2020', 
-            '2021', 
-            '2022', 
-            '2023', 
-            '2024', 
-            '2025'
-    
-        ]
-        
-        /*function filterByOctober() {
-            map.setFilter('clusters', ['==', ['get', 'month'], 'October']);}*/
-
-
-        // combine into one function
-        function filterBy(month, year){
-            const filters = ['all', ['==', ['get', 'month'], month], ['==', ['get', 'year'], year]]
-            map.setFilter('clusters', filters)
-            document.getElementById('month').textContent = month
-
-        }
-
-
-
-        /*function filterByMonth(month) {
-            const filters = ['==', 'month', month];
-            map.setFilter('clusters', filters);
-        // Set the label to the month
-        document.getElementById('month').textContent = month;
-    }
-        function filterByYear(year){
-            const filters = ['==', 'year', year];
-            map.setFilter('clusters', filters)
-        }*/
-
-        map.on('load', () =>{
-            map.addSource('aqi_monitors', {
-                type: 'geojson', 
-                data: 'data/aqi_lhe_data.geojson'
-
-            });
-
-        map.addLayer({
-            id:'clusters',
-            type: 'circle', 
-            source: 'aqi_monitors', 
-            paint: {
-        'circle-radius': 12,
-        'circle-color': [
-            'match',
-            ['downcase', ['get', 'aqi_cat']],
-            'good', '#478c5c',
-            'moderate', '#fede00',
-            'unhealthy for sensitive groups', '#FF7E00',
-            'unhealthy', '#e21b32',
-            'very unhealthy', '#8F3F97',
-            'hazardous', '#7E0023',
-            '#bddee8']
-           }});
-
-        // caled when the slider or the drop down is moved   
-        function monthYearHandler(){
-            const month = document.getElementById('slider').value
-            const monthName = months[month]
-            const year = document.getElementById('pick-year').value
-            filterBy(monthName, year)
-        }
-        
-        // whenever there is an input event on the slider or drop down then call the function
-        document.getElementById('slider').addEventListener('input', monthYearHandler);
-
-        document.getElementById('pick-year').addEventListener('input', monthYearHandler)
-
-
-        
-});
-    </script>
+    <script src="map.js"></script>
 
     <h2>Explore Emissions By Sector</h2>
-    <p> In response to worsening air quality, the Punjab government has implemented various policy tools, though many have proven ineffective or poorly designed. For example, in 2023, the government resorted to smart lockdowns, mandating the temporary closure of schools, offices, and businesses to reduce vehicular emissions. However, this approach mirrored the province's earlier COVID 19 lockdown strategy rather than a targeted environmental intervention. The policy ultimately failed to achieve its goals, as many citizens treated the shutdown as a "long weekend" and continued to drive to social gatherings.
-        Moreover, the policy was met with strong opposition from restaurant owners and small businesses, who argued that the true culprits were large industrial manufacturers and unregulated factories emitting significant pollutants. This raises several important questions:
-    </p>
-<ol>
-  <li>
-    What regulatory strategies has the federal government implemented to address factory emissions?
-  </li>
-  <li>
-    How should the costs of pollution be distributed? Should the focus be on vehicular emissions, industrial polluters, or agricultural practices like crop burning, which remains prevalent among farmers in Punjab?
-  </li>
-</ol>
-    
-        <div>
-        <embed
-        id="inlineFrameExample"
-        title="Inline Frame Example"
-        width="600"
-        height="300"
-        src="altair_viz/sector_comparison.html">
 
-    </div>
+<div>
+    <embed
+    width="1000"
+    height="1000"
+    src="sankey.html">
 
-    <div>
-        <embed
-id="inlineFrameExample"
-title="Inline Frame Example"
-width="1000"
-height="300"
-src="altair_viz/sector_source_comparison.html"> 
+
 </div>
-
-
 
 
 </body>
