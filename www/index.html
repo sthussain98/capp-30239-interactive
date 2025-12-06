@@ -1,0 +1,239 @@
+<!DOCTYPE HTML>
+<!--
+	Stellar by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>CAPP 30239: Interactive</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+        <link rel='stylesheet' href='https://unpkg.com/maplibre-gl@5.12.0/dist/maplibre-gl.css' />
+        <script src='https://unpkg.com/maplibre-gl@5.12.0/dist/maplibre-gl.js'></script>
+        <script src="https://unpkg.com/d3@5"></script>
+        <script src="https://unpkg.com/d3-sankey@0.12.3"></script>
+    
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+    <style>
+    #map {
+            width: 100%;
+            height: 500px;
+            margin: auto;
+        }
+
+    </style>
+
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header" class="alt">
+						<h1>Mapping Air Quality and Emission Flows in Lahore</h1>
+						<h2>Sarah Hussain<br />
+					</header>
+
+				<!-- Nav -->
+					<nav id="nav">
+						<ul>
+							<li><a href="#map-lahore" class="active">Explore AQI Across Lahore</a></li>
+							<li><a href="#sectoral-emissions">Emissions Flows</a></li>
+                            <li><a href="#data">Data Source</a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+
+<!-- Filters + Map in one section -->
+<section id="map-lahore" class="main">
+    <header class="major">
+        <h2>Explore AQI Across Lahore</h2>
+        
+        <p>Pakistan is the 2nd most polluted country on earth, and Lahore the 2nd most polluted city, with PM2.5 levels 14 times above WHO guidelines.</p>
+        <p>
+            The U.S. Air Quality Index (AQI) is used to measure air quality and uses six
+            color-coded categories to show how harmful the air may be to health. It is
+            calculated from levels of:
+            PM<sub>2.5</sub>, PM<sub>10</sub>, ozone (O<sub>3</sub>), nitrogen dioxide
+            (NO<sub>2</sub>), sulfur dioxide (SO<sub>2</sub>), and carbon monoxide (CO).
+          </p>
+        <p> Pick a year from the dropdown, then drag the slider to watch Lahore’s AQI shift through the seasons. Each circle is an air-quality monitor—hover to see its monthly average AQI.</p>
+      </header>
+
+    <div class="filter-map-layout">
+  
+      
+      <!-- LEFT: Filters (25%) -->
+        <div class="controls-row">
+            <!-- Year dropdown -->
+            <div class="control-block">
+              <label for="pick-year">Pick a year:</label>
+              <select name="years" id="pick-year">
+                <option value="">--Please choose an option--</option>
+                <option value="2018">2018</option>
+                <option value="2019">2019</option>
+                <option value="2020">2020</option>
+                <option value="2021">2021</option>
+                <option value="2022">2022</option>
+                <option value="2023">2023</option>
+                <option value="2024">2024</option>
+                <option value="2025">2025</option>
+              </select>
+            </div>
+    
+            <!-- Month slider -->
+            <div class="control-block">
+              <label id="month" for="slider">Month:</label>
+              <input id="slider" type="range" min="0" max="11" step="1" value="0" />
+              <span id="month-display"></span>
+            </div>
+    
+            <!-- Legend -->
+            <div class="control-block legend-block">
+                <h3>AQI Categories and Ranges</h3>
+              <div class="map-legend">
+                <svg width="300" height="60" viewBox="0 0 300 60" xmlns="http://www.w3.org/2000/svg">
+                  <rect x="0" y="0" width="50" height="60" fill="#478c5c" stroke="black"></rect>
+                  <text x="25" y="30" font-size="10" font-family="sans-serif" text-anchor="middle" dominant-baseline="middle">
+                    Good
+                  </text>
+                
+                  <rect x="50" y="0" width="50" height="60" fill="#fede00" stroke="black"></rect>
+                  <text x="75" y="30" font-size="10" font-family="sans-serif" text-anchor="middle" dominant-baseline="middle">
+                    Moderate
+                  </text>
+                
+                  <rect x="100" y="0" width="50" height="60" fill="#FF7E00" stroke="black"></rect>
+                  <text font-size="8" font-family="sans-serif" text-anchor="middle" dominant-baseline="middle">
+                    <tspan x="125" y="25">Unhealthy</tspan>
+                    <tspan x="125" y="37">for Sensitive</tspan>
+                  </text>
+                
+                  <rect x="150" y="0" width="50" height="60" fill="#e21b32" stroke="black"></rect>
+                  <text x="175" y="30" font-size="10" font-family="sans-serif" text-anchor="middle" dominant-baseline="middle">
+                    Unhealthy
+                  </text>
+                
+                  <rect x="200" y="0" width="50" height="60" fill="#8F3F97" stroke="black"></rect>
+                  <text font-size="8" font-family="sans-serif" text-anchor="middle" dominant-baseline="middle">
+                    <tspan x="225" y="25">Very</tspan>
+                    <tspan x="225" y="37">Unhealthy</tspan>
+                  </text>
+                
+                  <rect x="250" y="0" width="50" height="60" fill="#7E0023" stroke="black"></rect>
+                  <text x="275" y="30" font-size="9" font-family="sans-serif" text-anchor="middle" dominant-baseline="middle" fill="white">
+                    Hazardous
+                  </text>
+                </svg>
+                <div class="legend-explainer">
+                    <ul class="legend-list">
+                      <li><strong>Good (0–50)</strong></li>
+                      <li><strong>Moderate (51–100)</strong></li>
+                      <li><strong>Unhealthy for Sensitive Groups (101–150)</strong></li>
+                      <li><strong>Unhealthy (151–200)</strong></li>
+                      <li><strong>Very Unhealthy (201–300)</strong></li>
+                      <li><strong>Hazardous (301+)</strong></li>
+                    </ul>
+                  </div>
+              </div>
+            </div>
+          </div>
+          
+    
+        <!-- RIGHT: Map (75%) -->
+        <div class="map-panel">
+          <div id="map"></div>
+          <script src="js/map.js"></script>
+
+        </div>
+        
+    
+      </div> <!-- closes grid container -->
+      </section>
+
+      <section id="sectoral-emissions" class="main">
+
+      <div class="sectoral-emissions">
+        <header class="major">
+            <h2>Where do most emissions come from?</h2>
+            <p> This diagram shows how emissions in each sector (left) 
+                can be allocated to specific uses (middle) and pollutants (right). 
+                This kind of analysis can help policy-makers see how emissions 
+                move through the economy and identify where to act to combat them.</p>
+            <p> In this graph, emissions are estimated using a simple formula:
+            <strong>Emissions = Emission Factor (EF) × Activity Data (AD), </strong>
+            where EF comes from published sources such as the IPCC, and AD is the total activity level of each sector.
+        </p>
+        <p> Hover over any link to see the emissions value (in kilotonnes) represented 
+            by that connection, including flows from sector nodes to source 
+            nodes and from source nodes to pollutant nodes.</p>
+          </header>
+
+        <div>
+                <svg id="sankey" width="1000" height="600"></svg>
+                <div id="tooltip"
+                style="
+                position:absolute;
+                pointer-events:none;
+                background:white;
+                border:1px solid #999;
+                border-radius:4px;
+                padding:4px 8px;
+                font-size:11px;
+                opacity:0;">
+                </div>
+        
+            <script src="js/sankey.js"></script>
+                
+        
+        </div>
+    </section>
+
+    <section id="data" class="main">
+    <header class="major"> 
+        <h2>Data Source</h2>
+
+    </header>
+    <p>
+        Omar, A., & Pakistan Air Quality Initiative (Pakistan). (2025). 
+        Unveiling Pakistan's Air Pollution: A National Landscape Report on Health Risks, Sources and Solutions. 
+        Pakistan Air Quality Initiative.
+        <a href="https://doi.org/10.5281/zenodo.17629179" target="_blank" rel="noopener noreferrer">
+            https://doi.org/10.5281/zenodo.17629179
+          </a>
+    </p>
+
+    <p>
+
+        This site was made using <a href = "https://html5up.net/">HTML5UP</a>
+    </p>
+
+
+
+
+
+
+    </section>
+    
+         
+
+</div>
+  
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

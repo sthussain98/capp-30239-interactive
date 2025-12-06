@@ -1,0 +1,25 @@
+sector,source,total_emissions
+Domestic,Fuelwood & other,12.7855
+Domestic,Waste,9.109300000000001
+Industries,RFO,0.5699
+Domestic,Kerosene,0.01361
+Transport,Large Cars,13.6671
+Domestic,LPG,0.1618
+Industries,Natural Gas,1.8929999999999998
+Brick Kilns,Coal,17.316300000000002
+Transport,Small cars,8.3978
+Industries,Coal,8.518
+Power Generation,Fossil Fuel,18.8128
+Domestic,Coal,0.0091
+Transport,SUVs/Jeeps,9.1881
+Domestic,Natural Gas,2.3167999999999997
+Industries,HSD,2.4214
+Transport,Bikes,94.5336
+Transport,Small trucks/Pickups,5.5867
+Transport,Large trucks,22.235200000000003
+Transport,Wagons,5.5764000000000005
+Transport,Tractors,0.3965
+Industries,Biomass,0.5295
+Transport,Rickshaws,37.1227
+Transport,Buses,20.167
+Industries,LPG,0.2942

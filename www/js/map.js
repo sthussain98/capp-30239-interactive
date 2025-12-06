@@ -1,4 +1,3 @@
-console.log("hello");
 
 var map = new maplibregl.Map({
     container: 'map',

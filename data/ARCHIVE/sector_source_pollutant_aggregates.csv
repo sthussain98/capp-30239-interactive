@@ -1,0 +1,73 @@
+sector,source,pollutant,total_emissions,sector_source
+Transport,Bikes,CO,91.9247,Transport/Bikes
+Transport,Rickshaws,CO,35.7167,Transport/Rickshaws
+Power Generation,Fossil Fuel,SOx,15.876499999999998,Power Generation/Fossil Fuel
+Transport,Large trucks,NOx,13.1879,Transport/Large trucks
+Brick Kilns,Coal,CO,12.7405,Brick Kilns/Coal
+Transport,Buses,NOx,12.4709,Transport/Buses
+Domestic,Fuelwood & other,CO,11.5929,Domestic/Fuelwood & other
+Transport,Large Cars,CO,11.1308,Transport/Large Cars
+Transport,Large trucks,CO,8.5214,Transport/Large trucks
+Domestic,Waste,CO,7.5086,Domestic/Waste
+Transport,Buses,CO,7.2523,Transport/Buses
+Transport,Small cars,CO,7.1357,Transport/Small cars
+Industries,Coal,PM2.5,7.0403,Industries/Coal
+Transport,SUVs/Jeeps,NOx,5.7061,Transport/SUVs/Jeeps
+Brick Kilns,Coal,PM2.5,4.2573,Brick Kilns/Coal
+Transport,Wagons,CO,2.9138,Transport/Wagons
+Transport,Small trucks/Pickups,CO,2.9138,Transport/Small trucks/Pickups
+Transport,SUVs/Jeeps,CO,2.7951,Transport/SUVs/Jeeps
+Power Generation,Fossil Fuel,NOx,2.6136999999999997,Power Generation/Fossil Fuel
+Transport,Bikes,NOx,2.2751,Transport/Bikes
+Transport,Small trucks/Pickups,NOx,2.1678,Transport/Small trucks/Pickups
+Transport,Wagons,NOx,2.1678,Transport/Wagons
+Transport,Large Cars,NOx,2.1657,Transport/Large Cars
+Industries,HSD,NOx,1.7662,Industries/HSD
+Domestic,Waste,PM2.5,1.5632,Domestic/Waste
+Domestic,Gas,NOx,1.3957,Domestic/Gas
+Transport,Rickshaws,NOx,1.3141,Transport/Rickshaws
+Domestic,Fuelwood & other,PM2.5,1.1926,Domestic/Fuelwood & other
+Industries,NG,NOx,1.0023,Industries/NG
+Transport,Small cars,NOx,0.9971,Transport/Small cars
+Industries,Coal,CO,0.8991,Industries/Coal
+Industries,NG,CO,0.8877999999999999,Industries/NG
+Domestic,Gas,CO,0.8653,Domestic/Gas
+Transport,SUVs/Jeeps,PM2.5,0.6869,Transport/SUVs/Jeeps
+Industries,Coal,NOx,0.5786,Industries/Coal
+Industries,HSD,CO,0.533,Industries/HSD
+Transport,Large trucks,PM2.5,0.5259,Transport/Large trucks
+Transport,Small trucks/Pickups,PM2.5,0.5051,Transport/Small trucks/Pickups
+Transport,Wagons,PM2.5,0.4948,Transport/Wagons
+Transport,Buses,PM2.5,0.4438,Transport/Buses
+Transport,Large Cars,PM2.5,0.37060000000000004,Transport/Large Cars
+Transport,Bikes,PM2.5,0.3338,Transport/Bikes
+Brick Kilns,Coal,NOx,0.3185,Brick Kilns/Coal
+Industries,RFO,NOx,0.2966,Industries/RFO
+Transport,Tractors,NOx,0.277,Transport/Tractors
+Transport,Small cars,PM2.5,0.265,Transport/Small cars
+Industries,Biomass,NOx,0.2588,Industries/Biomass
+Power Generation,Fossil Fuel,CO,0.2407,Power Generation/Fossil Fuel
+Industries,Biomass,CO,0.2389,Industries/Biomass
+Industries,RFO,CO,0.2326,Industries/RFO
+Industries,LPG,NOx,0.1625,Industries/LPG
+Industries,LPG,CO,0.12240000000000001,Industries/LPG
+Industries,HSD,PM2.5,0.1222,Industries/HSD
+Transport,Rickshaws,PM2.5,0.0919,Transport/Rickshaws
+Domestic,LPG,NOx,0.0907,Domestic/LPG
+Power Generation,Fossil Fuel,PM2.5,0.0819,Power Generation/Fossil Fuel
+Transport,Tractors,CO,0.0803,Transport/Tractors
+Domestic,LPG,CO,0.0605,Domestic/LPG
+Domestic,Gas,PM2.5,0.0558,Domestic/Gas
+Industries,RFO,PM2.5,0.0407,Industries/RFO
+Transport,Tractors,PM2.5,0.0392,Transport/Tractors
+Domestic,Waste,NOx,0.0375,Domestic/Waste
+Industries,Biomass,PM2.5,0.0318,Industries/Biomass
+Domestic,Kerosene,PM2.5,0.012,Domestic/Kerosene
+Domestic,LPG,PM2.5,0.0106,Domestic/LPG
+Industries,LPG,PM2.5,0.0093,Industries/LPG
+Domestic,Charcoal,CO,0.008,Domestic/Charcoal
+Industries,NG,PM2.5,0.0029000000000000002,Industries/NG
+Domestic,Kerosene,CO,0.0016,Domestic/Kerosene
+Domestic,Charcoal,PM2.5,0.0007,Domestic/Charcoal
+Domestic,Charcoal,NOx,0.0004,Domestic/Charcoal
+Domestic,Kerosene,NOx,0.00001,Domestic/Kerosene

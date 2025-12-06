@@ -208,6 +208,8 @@ const labelNames = svg.append("g")
 .attr("text-anchor", "middle")
 .attr("dominant-baseline", "middle")
 .attr("fill","black")
-.attr("font-family", "helvetica")
+.attr("font-family", '"Source Sans Pro", Helvetica, sans-serif')
 .attr("font-weight", 400)
 .attr("font-size", "12px");
+
+
