@@ -1,3 +1,5 @@
+// code for this was inspired by; https://observablehq.com/@mbostock/flow-o-matic, https://observablehq.com/@jasper/005-sankey-graph
+
 const data = {
     nodes: [
         {name: "Brick Kilns", type: "sector"},
@@ -128,18 +130,20 @@ const height = +svg.attr("height");
 
 const colorScale = d3.scaleOrdinal().domain(["sector", "source", "pollutant"]).range(["#FF6501", "#1181C8 ", "#B40028"]); 
 
+// initializing the sankey function we will run our data on
 const sankeyFunc = d3.sankey()
 .nodeId(d => d.name)
 .nodeWidth(15)
 .nodePadding(12)
 .extent([[160, 40], [width - 160, height - 40]]);
 
+
+// passing our data through our sankey funtion
+// creating copies of our nodes and links
 const graph = sankeyFunc({
   nodes: data.nodes.map(d => ({ ...d })),
   links: data.links.map(d => ({ ...d }))
 });
-
-
 
 // Draw links
 const links = svg.append("g")
@@ -154,7 +158,9 @@ const links = svg.append("g")
     .style("pointer-events", "stroke");
 
 // custom tooltip
+// Asked ChatGPT to help me set up the hover tool tip
 const tooltip = d3.select("#tooltip");
+
 links
 .on("mouseover", function(d) {
 // highlight the hovered link
@@ -182,7 +188,9 @@ d3.select(this)
 tooltip.style("opacity", 0);
 });
 
-    // Draw nodes
+// Draw nodes
+// sankeyFunc calculates positions for every node and link
+// here we are using those attributes to actually draw out the graph
 const nodes = svg.append("g")
 .append("g")
 .selectAll("rect")
@@ -194,6 +202,8 @@ const nodes = svg.append("g")
 .attr("height", (d) => d.y1 - d.y0)
 .attr("width", (d) => d.x1 - d.x0);
 
+
+// depth captures whether it is the left most or right most node
 const maxDepth = d3.max(graph.nodes, d => d.depth);
 
 const labelNames = svg.append("g")
