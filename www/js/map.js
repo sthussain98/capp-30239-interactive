@@ -12,19 +12,22 @@ const months = ['January', 'February','March','April','May','June','July',
 const years = ['2016', '2017','2018', '2019', '2020', '2021', '2022', 
     '2023', '2024', '2025']
 
-// combine into one function
+// combine into one function: how we want our data to be filtered
 function filterBy(month, year){
     const filters = ['all', ['==', ['get', 'month'], month], ['==', ['get', 'year'], year]]
     map.setFilter('clusters', filters)
+    // allowing sider to display month
     document.getElementById('month-display').textContent = month
 
 }
 
+// loading data 
 map.on('load', () =>{
     map.addSource('aqi_monitors', {
         type: 'geojson', 
         data: 'data/aqi_lhe_data.geojson'});
 
+// adding circles for AQI monitors
 map.addLayer({
     id:'clusters',
     type: 'circle', 
@@ -42,7 +45,8 @@ map.addLayer({
             'hazardous', '#7E0023',
             '#bddee8']}});
 
-// caled when the slider or the drop down is moved   
+// caled when the slider or the drop down is moved 
+// figure out which month and year value the user picked and filter the map to it 
 function monthYearHandler(){
     const month = document.getElementById('slider').value
     const monthName = months[month]
