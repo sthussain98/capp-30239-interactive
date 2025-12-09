@@ -12,13 +12,15 @@ According to the 6th Annual World Air Quality Report, Pakistan was ranked as the
 #### `/src/preprocess.py`
 This script cleans the AQI data and generates the GeoJSON file used by the map.
 
-#### `/www`
+#### `/docs`
 This folder follows the structure of an [HTML5 UP](https://html5up.net/) template and contains the website’s static files (HTML, CSS, and assets).
 
-#### `/www/data`
+*Note: I changed the name of this folder from www to docs so that I could publish my site using Github Pages*
+
+#### `/docs/data`
 This folder constains the geojson that feeds the interactive map.
 
-#### `/www/js`
+#### `/docs/js`
 This folder contains the JavaScript code for the interactive map and the Sankey graph.
 
 
